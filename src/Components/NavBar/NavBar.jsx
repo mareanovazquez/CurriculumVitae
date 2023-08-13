@@ -1,16 +1,29 @@
 import Nav from 'react-bootstrap/Nav';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export function NavBar() {
     return (
-        <div className='container-fluid'>
-            <div className='row'>
-                <div>Formación</div>
-                <div>Experiencia</div>
-                <div>Docencia</div>
-                <div>Habilidades</div>
-                
-            </div>
-        </div>
+        <Nav className="justify-content-end" >
+            <Nav.Item>
+                    <NavLink to='/'>
+                        Sobre mi
+                    </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+                    <NavLink to='/docencia'>
+                        Formación
+                    </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+                    <NavLink to='/formacion'>
+                        Formación
+                    </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+                    <NavLink to='/experiencia'>
+                        Experiencia
+                    </NavLink>
+            </Nav.Item>
+        </Nav>
     );
 }

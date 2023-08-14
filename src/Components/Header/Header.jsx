@@ -5,7 +5,7 @@ export const Header = () => {
 
     <>
       <div className='contenidoHeader'>
-        <img className='img-fluid rounded ' src={perfil} alt='perfil'/>        
+        <img className='imgPerfil' src={perfil} alt='perfil'/>        
         <h4 className='text-center text-success' >Mariano Dario Vazquez</h4>
         <h6 className=''>Periodista </h6>
         <h6>Desarrollador Front-End</h6>

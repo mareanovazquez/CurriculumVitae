@@ -1,15 +1,14 @@
-
 .contenedorCV {
     /*posición y forma del contenedor*/
     width: 75%;
     height: 70vh;
-    box-shadow: 0px 0px 40px 16px rgba(137,135,135,0.56);
-    position: fixed;
+    box-shadow: 0px 0px 40px 16px rgba(137, 135, 135, 0.56);
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgb(255,255,255);
-    background: linear-gradient(14deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.5) 96%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(14deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.5) 96%);
     border-radius: 1%;
     /*posición contenido*/
     display: flex;
@@ -22,6 +21,7 @@
     position: absolute;
     top: 50%;
     left: 0;
+    z-index: 44444;
     transform: translateY(-50%);
     padding-left: 30px;
     display: flex;
@@ -35,15 +35,32 @@
     padding-right: 10px;
 }
 
+
+
 .contenedorHyF {
     width: 40%;
     padding: 20px;
+
+}
+
+.contenidoHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgPerfil {
+    width: 80%;
+    border-radius: 1%;
+
+
 }
 
 .contenedorDEFH {
     width: 50%;
     height: 80%;
-   
+
 }
 
 .contenidoFormacion {
@@ -55,4 +72,3 @@
     justify-content: center;
     align-items: center;
 }
-

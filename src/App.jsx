@@ -18,12 +18,12 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar />
-        <div className='contenedor'>
-          <div>
+        <div className='contenedorCV'>
+          <div className='contenedorHyF'>
           <Header />
           <Footer />
           </div>
-          <div>
+          <div className='contenedorDEFH'>
           <Routes>
             <Route path='/' element={<AboutMe/>}/>
             <Route path='/docencia' element={<Docencia />} />

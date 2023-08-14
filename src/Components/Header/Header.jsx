@@ -1,16 +1,17 @@
-export const Header = ()=> {
+import perfil from '../../assets/img/perfil.jpg'
+export const Header = () => {
 
-    return (
-       
-        <>
-      <div>
-      <h1 >Mariano Dario Vazquez</h1>
-      <h3 >Periodista</h3>
-      <h4 >Desarrollador Front-End</h4>
-      <h4 >Docente universitario</h4>
-      <h5 ></h5>
+  return (
+
+    <>
+      <div className='contenidoHeader'>
+        <img className='img-fluid rounded ' src={perfil} alt='perfil'/>        
+        <h4 className='text-center text-success' >Mariano Dario Vazquez</h4>
+        <h6 className=''>Periodista </h6>
+        <h6>Desarrollador Front-End</h6>
+        <h6>Docente universitario</h6>
       </div>
-       
-        </>
-    )
+
+    </>
+  )
 }

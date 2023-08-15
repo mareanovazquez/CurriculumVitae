@@ -1,5 +1,11 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
+import { faGlasses } from '@fortawesome/free-solid-svg-icons';
+import { faChalkboardUser } from '@fortawesome/free-solid-svg-icons';
+import { faLaptop } from '@fortawesome/free-solid-svg-icons';
 
 export function NavBar() {
 
@@ -15,37 +21,45 @@ export function NavBar() {
         <div className="MenuNavBar" >
 
             <NavLink className='opcionesNavBar' to='/'>
-                <button className={`my-button ${activeButton === 1 ? 'btn btn-success' : 'btn btn-outline-success'}`}
-                    onClick={() => toggleActive(1)} >
-                    Sobre mi
-                </button>
-            </NavLink>
-
-            <NavLink className='opcionesNavBar' to='/docencia'>
-                <button className={`my-button ${activeButton === 2 ? 'btn btn-success' : 'btn btn-outline-success'}`}
-                    onClick={() => toggleActive(2)}>
-                    Docencia
+                <button className={`my-button ${activeButton === 1 ? 'btn btn-secondary' : 'btn btn-outline-secondary'}`}
+                    onClick={() => toggleActive(1)}>
+                    <FontAwesomeIcon icon={faGlasses} /> 
+                    <br></br>
+                    <small>SOBRE MI</small>
                 </button>
             </NavLink>
 
             <NavLink className='opcionesNavBar' to='/formacion'>
-                <button className={`my-button ${activeButton === 3 ? 'btn btn-success' : 'btn btn-outline-success'}`}
-                    onClick={() => toggleActive(3)} >
-                    Formación
+                <button className={`my-button ${activeButton === 2 ? 'btn btn-secondary' : 'btn btn-outline-secondary'}`}
+                    onClick={() => toggleActive(2)} >
+                    <FontAwesomeIcon icon={faGraduationCap} />
+                    <br></br> 
+                    <small> ESTUDIOS</small>
                 </button >
             </NavLink>
 
+            <NavLink className='opcionesNavBar' to='/docencia'>
+                <button className={`my-button ${activeButton === 3 ? 'btn btn-secondary' : 'btn btn-outline-secondary'}`}
+                    onClick={() => toggleActive(3)}>
+                    <FontAwesomeIcon icon={faChalkboardUser} /> 
+                    <br></br>
+                    <small>DOCENCIA</small>
+                </button>
+            </NavLink>
+
             <NavLink className='opcionesNavBar' to='/experiencia'>
-                <button className={`my-button ${activeButton === 4 ? 'btn btn-success' : 'btn btn-outline-success'}`}
+                <button className={`my-button ${activeButton === 4 ? 'btn btn-secondary' : 'btn btn-outline-secondary'}`}
                     onClick={() => toggleActive(4)} >
-                    Experiencia
+                    <FontAwesomeIcon icon={faLaptop} /> 
+                    <br></br>
+                    <small>EXPERIENCIA</small>
                 </button>
             </NavLink>
 
             <NavLink className='opcionesNavBar' to='/habilidades'>
-                <button className={`my-button ${activeButton === 5 ? 'btn btn-success' : 'btn btn-outline-success'}`}
+                <button className={`my-button ${activeButton === 5 ? 'btn btn-secondary' : 'btn btn-outline-secondary'}`}
                     onClick={() => toggleActive(5)} >
-                    Habilidades
+                    <FontAwesomeIcon icon={faScrewdriverWrench} /> <br></br> <small>HABILIDADES</small>
                 </button>
             </NavLink>
         </div>

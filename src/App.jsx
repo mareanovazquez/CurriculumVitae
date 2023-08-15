@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './estilos.css'
+import './index.css'
 import { NavBar } from './Components/NavBar/NavBar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Docencia } from './Components/Docencia/Docencia'
@@ -19,7 +20,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <div className='contenedorCV'>
-          <div className='contenedorHyF'>
+          <div className='contenedorHeaderyFooter'>
           <Header />
           <Footer />
           </div>

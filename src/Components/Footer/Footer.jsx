@@ -1,15 +1,31 @@
+import { useEffect, useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
-import { Link } from 'react-router-dom';
 
 export const Footer = () => {
+
+  const [tituloActual, setTituloActual] = useState(1)
+
+  useEffect(() => {
+        const timer = setTimeout(() => {
+            // Si el título actual es el tercer título, volvemos al primero. 
+            // De lo contrario, avanzamos al siguiente título.
+            setTituloActual(tituloActual < 3 ? tituloActual + 1 : 1);
+        }, 6000); // 5 segundos
+
+        // Limpiamos el temporizador si el componente se desmonta
+        return () => clearTimeout(timer);
+    }, [tituloActual]);
 
   return (
     <>
       <div className='contenedorFooter'>
-        <div className='contenedorDescripcion'>
-          <h6 >Periodista </h6>
-          <h6 >Desarrollador Front-End</h6>
-          <h6 >Docente universitario</h6>
+        <div className='contenedorDescripcion'> 
+          {tituloActual === 1 && <h4>Periodista</h4>}
+            {tituloActual === 2 && <h4>Docente</h4>}
+            {tituloActual === 3 && <h4 className='desarrolladorFE'>Desarrollador frontend</h4>}
+          
+         {/*  <h6 >Desarrollador Front-End</h6>
+          <h6 >Docente universitario</h6> */}
         </div>
 
         <Nav variant="underline" defaultActiveKey="/home" className=' contenedorContacto justify-content-center'>

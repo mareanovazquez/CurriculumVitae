@@ -5,14 +5,14 @@ export function NavBar() {
 
     const [activeButton, setActiveButton] = useState(null)
 
-
+    //Función para manejar la clase del botón seleccionado
     const toggleActive = (buttonId) => {
         setActiveButton(buttonId === activeButton ? null : buttonId);
 
     };
 
     return (
-        <div className="NavBar" >
+        <div className="MenuNavBar" >
 
             <NavLink className='opcionesNavBar' to='/'>
                 <button className={`my-button ${activeButton === 1 ? 'btn btn-success' : 'btn btn-outline-success'}`}

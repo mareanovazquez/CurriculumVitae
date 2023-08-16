@@ -136,25 +136,66 @@
 }
 
 .contenedorDEFH {
-    width: 50%;
+    width: 55%;
     height: 80%;
 
 }
 
 .contenedorSobreMi {
-    width: 75%;
+    /*Dimensiones del contenedor*/
+    width: 95%;
     height: 100%;
+
+    /*Disposición del contenido*/
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: auto;
+    
 }
+
+
 
 .contenedorSobreMi .card .card-header {
     color: #ff9800;
 }
 
+.contenidoSobreMi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.biografia {
+    width: 50%;
+}
+
+.datosPerfil {
+    /*Dimensiones del contenedor*/
+    width: 40%;
+}
+
+.datosPerfil p {
+    border-bottom: 2px;
+    border-bottom-color: #ff9800;
+    border-bottom-style: solid;
+    padding-right: 10px;
+
+    /*disposición del contenido*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.datosPerfil p span{
+    background-color: #ff9800;
+    font-weight: 700;
+    padding: 3px;
+    font-size: 14px;
+}
 .contenedorFormacion {
     width: 75%;
     height: 100%;

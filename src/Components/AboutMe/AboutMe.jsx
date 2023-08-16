@@ -3,10 +3,12 @@ export const AboutMe = () => {
     return (
         <>
             <div className="contenedorSobreMi">
+
+                <div className="card-header text-center display-6">
+                    SOBRE MÍ
+                </div>
                 <div className="card">
-                    <div className="card-header text-center display-6">
-                        SOBRE MÍ
-                    </div>
+
                     <div className="contenidoSobreMi">
                         <div className="card-body biografia">
                             <p className="card-text"> Mi nombre es Mariano Dario Vazquez y soy oriundo de Santa Teresita.
@@ -19,7 +21,7 @@ export const AboutMe = () => {
                             <p> <span>ESTADO CIVIL:</span> Soltero</p>
                             <p> <span>UBICACIÓN:</span>CABA</p>
                             <p><span>DISPONIBILIDAD:</span>Freelance</p>
-                           
+
                         </div>
                     </div>
                     <div className="card-body">

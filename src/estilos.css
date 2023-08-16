@@ -149,7 +149,7 @@
     /*Disposición del contenido*/
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     overflow: auto;
     
@@ -157,8 +157,14 @@
 
 
 
-.contenedorSobreMi .card .card-header {
+.contenedorSobreMi .card-header {
     color: #ff9800;
+    font-weight: 700;
+    overflow: hidden;
+    width: 0;
+    white-space: nowrap;
+    animation: typing 1.5s steps(38) 0.5s 1 normal both, blink 1s steps(1) infinite;
+
 }
 
 .contenidoSobreMi {

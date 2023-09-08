@@ -5,16 +5,14 @@ export const Header = () => {
 
     <>
       <div className='contenedorHeader'>
-        
+
         <div className='contenedorImg'>
-           <img className='imgPerfil' src={perfil} alt='perfil' />
+          <img className='imgPerfil' src={perfil} alt='perfil' />
         </div>
 
         <div className='contenedorNombre'>
           <h2 className='text-light' >Mariano Dario Vazquez</h2>
         </div>
-        
-        
 
       </div>
 

@@ -137,6 +137,19 @@
     }
 }
 
+@keyframes fadeInAndMoveUp {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+        /* Aquí empezará un poco más a la derecha y se moverá a su posición original */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .contenedorDescargaCV {
     padding-top: 10px;
 }
@@ -155,7 +168,7 @@
     /*Disposición del contenido*/
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     overflow: auto;
 
@@ -164,14 +177,21 @@
 
 
 .contenedorSobreMi .card-header {
+
+    width: 200px;
+    height: 100px;
     color: #ff9800;
     font-weight: 700;
-    overflow: hidden;
-    width: 0;
-    white-space: nowrap;
-    animation: typing 1.5s steps(38) 0.5s 1 normal both, blink 1s steps(1) infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+    animation: fadeInAndMoveUp 2s forwards;
+    opacity: 0;
+    /* Definimos la opacidad inicial en 0 para que la caja esté oculta al principio */
 
 }
+
 
 .contenidoSobreMi {
     display: flex;

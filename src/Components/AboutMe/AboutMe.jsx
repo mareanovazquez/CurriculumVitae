@@ -3,7 +3,6 @@ export const AboutMe = () => {
     return (
         <>
             <div className="contenedorSobreMi">
-
                 <div className="card-header text-center display-6">
                     SOBRE MÍ
                 </div>

@@ -267,14 +267,14 @@ textos MONTSERRAT*/
 
 .contenidoFormacion ul li {
     list-style: none;
-    text-align: center;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
 
 .dividerCard {
-    width: 95%;
-    height: 2px;
+    width: 100%;
+    height: 5px;
     margin-right: auto;
     margin-left: auto;
     position: relative;
@@ -307,7 +307,7 @@ textos MONTSERRAT*/
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 
 }
 

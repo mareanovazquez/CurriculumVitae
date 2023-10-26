@@ -9,28 +9,28 @@ export const Formacion = () => {
                 <div className="card">
                     <div className="contenidoFormacion">
                         <div className="card-body ">
-                            <h5 className="card-title text-center"> <span>
-                            PERIODISMO</span></h5>
+                            <h5 className="card-title"> <span>
+                                PERIODISMO</span></h5>
                             <div className="card-text formacion">
                                 <ul>
-                                    <li>Licenciatura en social con orientación en periodismo</li>
-                                    <li>Doctorado en comunicación social</li>
+                                    <li>Licenciatura en social con orientación en periodismo | Facultad de Periodismo y Comunicación Social (UNLP)</li>
+                                    <li>Doctorado en comunicación social | Facultad de Periodismo y Comunicación Social (UNLP)</li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="dividerCard"> <div className="dividerBar"></div> </div>
                         <div className="card-body ">
-                            <h5 className="card-title text-center">
+                            <h5 className="card-title">
                                 <span>PROGRAMACIÓN Y DESARROLLO</span></h5>
                             <div className="card-text formacion">
                                 <ul>
-                                    <li>Desarrollo web </li>
-                                    <li>Javascript</li>
-                                    <li>React</li>
+                                    <li>Desarrollo web (CODER HOUSE) </li>
+                                    <li>Javascript (CODER HOUSE)</li>
+                                    <li>React (CODER HOUSE)</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+                    <div className="dividerCard"> <div className="dividerBar"></div> </div>
                 </div>
             </div>
         </>

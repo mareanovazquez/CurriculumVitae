@@ -134,13 +134,6 @@ textos MONTSERRAT*/
     animation: typing 1.5s steps(38) 0.5s 1 normal both, blink 1s steps(1) infinite;
 }
 
-/* .contenedorDescripcion h4 .desarrolladorFE{
-    animation: typing 1.5s steps(38) 0.5s 1 normal both, blink 1s steps(1) infinite;
-} */
-
-
-
-
 .contenedorDescargaCV {
     padding-top: 10px;
 }
@@ -185,6 +178,7 @@ textos MONTSERRAT*/
     justify-content: center;
     align-items: center;
     background-color: #EEE5E9;
+    padding-top: 10px;
 }
 
 .biografia {
@@ -257,12 +251,13 @@ textos MONTSERRAT*/
 
 .contenidoFormacion {
     background-color: #EEE5E9;
+    padding-top: 10px;
 }
 
 .contenidoFormacion .card-title {
     font-family: 'bebas neue', sans-serif;
-    font-size: 30px;
-    letter-spacing: 2px;
+    font-size: 25px;
+    letter-spacing: 1px;
     padding-bottom: 10px;
 }
 
@@ -365,7 +360,7 @@ textos MONTSERRAT*/
 }
 
 
-.levelRedaccion, .levelEdicion, .levelHtml, .levelCss, .levelJS, .levelReact {
+.levelRedaccion, .levelEdicion, .levelLanguage, .levelHtml, .levelCss, .levelJS, .levelReact {
     position: absolute;
     height: 10px;
     width: 0%;
@@ -373,7 +368,7 @@ textos MONTSERRAT*/
     background-color: #ff9800;
 }
 
-.percentageRedaccion, .percentageEdicion, .percentageHtml, .percentageCss, .percentageJS, .percentageReact {
+.percentageRedaccion, .percentageEdicion, .percentageLanguage, .percentageHtml, .percentageCss, .percentageJS, .percentageReact {
     position: absolute;
     top: 10px;
     /* Ajusta según necesidad, para posicionar el texto arriba de la barra */
@@ -383,15 +378,12 @@ textos MONTSERRAT*/
     font-weight: 800;
 }
 
-
 .contenedorExperiencia {
-    width: 75%;
+    width: 95%;
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
 .contenedorExperiencia .card-header {
@@ -408,13 +400,48 @@ textos MONTSERRAT*/
     opacity: 0;
 }
 
+.contenidoExperiencia {
+    background-color: #EEE5E9;
+    max-height: 400px;
+    overflow-y:auto;
+    
+}
+.contenidoExperiencia ul li {
+    list-style: none;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.contenidoExperiencia ul li small {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #ff9800;
+    font-weight: 800;
+}
+
+.contenidoExperiencia ul li a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #323232;
+}
+
+.contenidoExperiencia ul .itemExp {
+    padding-top:20px;
+    font-weight: 800;
+}
+
+.contenidoExperiencia ul .subItemExp {
+    padding-left: 10px;
+}
+
 .contenedorDocencia {
     width: 95%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
+    }
 
 .contenedorDocencia .card-header {
 color: #ff9800;
@@ -422,6 +449,7 @@ font-family: 'Nunito', sans-serif;
 font-weight: 700;
 letter-spacing: 5px;
 font-size: 50px;
+padding-bottom: 10px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -431,12 +459,15 @@ opacity: 0;
 }
 .contenidoDocencia {
     background-color: #EEE5E9;
+    max-height: 400px;
+    overflow-y:auto;
+    padding-top: 10px;
 }
 
 .contenidoDocencia .card-title{
     font-family: 'bebas neue', sans-serif;
-    font-size: 30px;
-    letter-spacing: 2px;
+    font-size: 25px;
+    letter-spacing: 1px;
     padding-bottom: 10px;
 }
 

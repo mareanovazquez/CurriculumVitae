@@ -6,7 +6,6 @@ export const Docencia = () => {
                 <div className="card-header text-center display-6">
                     DOCENCIA
                 </div>
-
                 <div className="card">
                     <div className="contenidoDocencia">
                         <div className="card-body ">

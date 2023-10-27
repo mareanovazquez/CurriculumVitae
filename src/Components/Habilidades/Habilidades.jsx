@@ -1,18 +1,24 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
 import { faGlasses } from '@fortawesome/free-solid-svg-icons';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
 import { faSquareJs } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from '@fortawesome/free-brands-svg-icons'
-
+import { useEffect, useState } from "react";
+import { LoadingBarEdicion } from "../Loading/LoadingBarEdicion";
+import { LoadingBarRedaccion } from "../Loading/LoadingBarRedaccion";
+import { LoadingBarHtml } from "../Loading/LoadinbBarHtml";
+import { LoadingBarCss } from "../Loading/LoadingBarCss";
+import { LoadingBarJavascript } from "../Loading/LoadingBarJavascript";
+import { LoadingBarReact } from "../Loading/LoadingBarReact";
 
 
 export const Habilidades = () => {
 
     return (
         <>
+
             <div className="contenedorHabilidades">
                 <div className="card-header text-center display-6">
                     HABILIDADES
@@ -26,43 +32,42 @@ export const Habilidades = () => {
                                         <FontAwesomeIcon icon={faPencil} />
                                         <div className="skillText">Redacción</div>
                                         <div className="skillLevel">
-                                            <div className="levelRedaccion">
-                                            </div>
+                                            <LoadingBarRedaccion />
                                         </div>
                                     </li>
                                     <li className="skillItem">
                                         <FontAwesomeIcon icon={faGlasses} />
                                         <div className="skillText">Edición</div>
                                         <div className="skillLevel">
-                                            <div className="levelEdicion"></div>
+                                            <LoadingBarEdicion />
                                         </div>
                                     </li>
                                     <li className="skillItem">
                                         <FontAwesomeIcon icon={faHtml5} />
                                         <div className="skillText">HTML5</div>
                                         <div className="skillLevel">
-                                            <div className="levelHtml"></div>
+                                            <LoadingBarHtml/>
                                         </div>
                                     </li>
                                     <li className="skillItem">
                                         <FontAwesomeIcon icon={faCss3Alt} />
                                         <div className="skillText">CSS3</div>
                                         <div className="skillLevel">
-                                            <div className="levelCss"></div>
+                                            <LoadingBarCss/>
                                         </div>
                                     </li>
                                     <li className="skillItem">
                                         <FontAwesomeIcon icon={faSquareJs} />
                                         <div className="skillText">Javascript</div>
                                         <div className="skillLevel">
-                                            <div className="levelJS"></div>
+                                            <LoadingBarJavascript/>
                                         </div>
                                     </li>
                                     <li className="skillItem">
                                         <FontAwesomeIcon icon={faReact} />
                                         <div className="skillText">ReactJS</div>
                                         <div className="skillLevel">
-                                            <div className="levelReact"></div>
+                                            <LoadingBarReact/>
                                         </div>
                                     </li>
 
@@ -71,6 +76,7 @@ export const Habilidades = () => {
                         </div>
                     </div>
                 </div>
+                <div className="dividerCard"> <div className="dividerBar"></div> </div>
             </div>
         </>
     )

@@ -196,6 +196,13 @@ textos MONTSERRAT*/
     font-size: 16px;
 }
 
+.biografia .card-text a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #e40434;
+    letter-spacing: 2px;
+}
+
 .datosPerfil {
     /*Dimensiones del contenedor*/
     width: 40%;
@@ -273,8 +280,8 @@ textos MONTSERRAT*/
 }
 
 .dividerCard {
-    width: 100%;
-    height: 5px;
+    width: 98%;
+    height: 2px;
     margin-right: auto;
     margin-left: auto;
     position: relative;
@@ -284,13 +291,13 @@ textos MONTSERRAT*/
     height: 100%;
     width: 0%;
     /* Comienza sin llenado */
-    background-color: #323232;
+    background-color: #ff9800;
     /* Color de la barra de progreso */
     position: absolute;
     top: 0;
     left: 0;
     /* Animación */
-    animation: fillBar 3s ease-in-out forwards;
+    animation: fillBar 4s ease-in-out forwards;
     /* Puedes cambiar la duración a lo que necesites */
 }
 
@@ -342,6 +349,7 @@ textos MONTSERRAT*/
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding-bottom: 10px;
 }
 
 .contenedorHabilidades .contenidoSkills .listSkills li .skillText {
@@ -353,136 +361,27 @@ textos MONTSERRAT*/
 .contenedorHabilidades .contenidoSkills .listSkills li .skillLevel {
     width: 70%;
     height: 10px;
-
-    animation: loadBar 2s forwards;
-    /* Aplica la animación. Aquí 2s es la duración, puedes ajustarla. */
+    position: relative;
 }
 
-@keyframes loadBar {
-    0% {
-        width: 0;
-    }
 
-    100% {
-        width: 70%;
-        /* Esto es según el ancho que ya tenías definido para .skillLevel */
-    }
-}
-
-.levelRedaccion {
+.levelRedaccion, .levelEdicion, .levelHtml, .levelCss, .levelJS, .levelReact {
+    position: absolute;
     height: 10px;
     width: 0%;
-    /* Comienza sin llenado */
+    /* Se inicia en 0, pero React lo actualizará */
     background-color: #ff9800;
-    /* Color de la barra de progreso */
-    top: 0;
+}
+
+.percentageRedaccion, .percentageEdicion, .percentageHtml, .percentageCss, .percentageJS, .percentageReact {
+    position: absolute;
+    top: 10px;
+    /* Ajusta según necesidad, para posicionar el texto arriba de la barra */
     left: 0;
-    /* Animación */
-    animation: levelBarRedaccion 3s 1.8s ease-in-out forwards;
+    font-size: 12px;
+    color: #323232;
+    font-weight: 800;
 }
-
-@keyframes levelBarRedaccion {
-    to {
-        width: 90%;
-        /* Llena completamente el div */
-    }
-}
-
-.levelEdicion {
-    height: 10px;
-    width: 0%;
-    /* Comienza sin llenado */
-    background-color: #ff9800;
-    /* Color de la barra de progreso */
-    top: 0;
-    left: 0;
-    /* Animación */
-    animation: levelBarEdicion 3s 2.3s ease-in-out forwards;
-}
-
-@keyframes levelBarEdicion {
-    to {
-        width: 80%;
-        /* Llena completamente el div */
-    }
-}
-
-.levelHtml {
-    height: 10px;
-    width: 0%;
-    /* Comienza sin llenado */
-    background-color: #ff9800;
-    /* Color de la barra de progreso */
-    top: 0;
-    left: 0;
-    /* Animación */
-    animation: levelBarHtml 3s 2s ease-in-out forwards;
-}
-
-@keyframes levelBarHtml {
-    to {
-        width: 87%;
-        /* Llena completamente el div */
-    }
-}
-
-.levelCss {
-    height: 10px;
-    width: 0%;
-    /* Comienza sin llenado */
-    background-color: #ff9800;
-    /* Color de la barra de progreso */
-    top: 0;
-    left: 0;
-    /* Animación */
-    animation: levelBarCss 3s 2.1s ease-in-out forwards;
-}
-
-@keyframes levelBarCss {
-    to {
-        width: 78%;
-        /* Llena completamente el div */
-    }
-}
-
-.levelJS {
-    height: 10px;
-    width: 0%;
-    /* Comienza sin llenado */
-    background-color: #ff9800;
-    /* Color de la barra de progreso */
-    top: 0;
-    left: 0;
-    /* Animación */
-    animation: levelBarJs 3s 2.4s ease-in-out forwards;
-}
-
-@keyframes levelBarJs {
-    to {
-        width: 69%;
-        /* Llena completamente el div */
-    }
-}
-
-.levelReact {
-    height: 10px;
-    width: 0%;
-    /* Comienza sin llenado */
-    background-color: #ff9800;
-    /* Color de la barra de progreso */
-    top: 0;
-    left: 0;
-    /* Animación */
-    animation: levelReact 3s 2.5s ease-in-out forwards;
-}
-
-@keyframes levelReact {
-    to {
-        width: 63%;
-        /* Llena completamente el div */
-    }
-}
-
 
 
 .contenedorExperiencia {
@@ -495,22 +394,70 @@ textos MONTSERRAT*/
     align-items: center;
 }
 
-.contenedorExperiencia .card .card-header {
+.contenedorExperiencia .card-header {
     color: #ff9800;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+    animation: fadeInAndMoveUp 2s forwards;
+    opacity: 0;
 }
 
 .contenedorDocencia {
-    width: 75%;
+    width: 95%;
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
-.contenedorDocencia .card .card-header {
-    color: #ff9800;
+.contenedorDocencia .card-header {
+color: #ff9800;
+font-family: 'Nunito', sans-serif;
+font-weight: 700;
+letter-spacing: 5px;
+font-size: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 0.4s;
+animation: fadeInAndMoveUp 2s forwards;
+opacity: 0;
+}
+.contenidoDocencia {
+    background-color: #EEE5E9;
+}
+
+.contenidoDocencia .card-title{
+    font-family: 'bebas neue', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+.contenidoDocencia .card-title span {
+    background-color: #ff9800;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.contenidoDocencia ul li {
+    list-style: none;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.contenidoDocencia ul li small {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #ff9800;
+    font-weight: 800;
 }
 
 /* ANIMACIONES  */

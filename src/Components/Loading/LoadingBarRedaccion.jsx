@@ -14,7 +14,7 @@ export const LoadingBarRedaccion = () => {
             }
         }
 
-        const interval = setInterval(increasePercentage, (50 * 80 / 100));
+        const interval = setInterval(increasePercentage, (25 * 80 / 100));
 
         return () => clearInterval(interval); // Limpiamos el intervalo al desmontar el componente
 

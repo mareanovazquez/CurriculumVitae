@@ -1,5 +1,6 @@
 /* PALETA DE COLORES
-Color de fondo #323232;
+Color de fondo: #242424
+Color de fondo contenedor #323232;
 Fuente naranja #ff9800
 Fuente blanca #EEE5E9
 */
@@ -8,6 +9,32 @@ Fuente blanca #EEE5E9
 título secundario BEBAS NEUE
 textos MONTSERRAT*/
 
+
+/* Menores a 576px 
+aplica a todo aquello que no sea 
+reescrito en MediaQueries */
+
+body {
+    background-color: #242424;
+}
+
+/* Entre 576px y 767px */
+/* Bootstrap breakpoints SM y superiores */
+@media (min-width: 576px) {
+
+}
+
+/* Entre 768px y 991px */
+/* Bootstrap breakpoints MD y superiores */
+@media (min-width: 768px) {
+
+}
+
+
+
+/* Entre 992px y 1199px */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 992px) {
 
 .contenedorCV {
     /*posición y forma del contenedor*/
@@ -89,8 +116,11 @@ textos MONTSERRAT*/
 }
 
 .imgPerfil {
-    width: 65%;
+    width: 55%;
     border-radius: 50%;
+    object-fit: contain;
+    object-position: center;
+    
 }
 
 .contenedorNombre {
@@ -519,4 +549,12 @@ opacity: 0;
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+}
+
+/* Desde 1200px en adelante */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 1200px) {
+    /* Tus estilos para dispositivos extra large y superiores van aquí */
 }

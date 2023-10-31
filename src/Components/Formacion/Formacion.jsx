@@ -13,8 +13,8 @@ export const Formacion = () => {
                                 <ul>
                                     <li className=" h5 card-title"> <span>
                                         PERIODISMO</span></li>
-                                    <li>Licenciatura en social con orientación en periodismo | Facultad de Periodismo y Comunicación Social (UNLP)</li>
-                                    <li>Doctorado en comunicación social | Facultad de Periodismo y Comunicación Social (UNLP)</li>
+                                    <li>Licenciatura en social con orientación en periodismo. Facultad de Periodismo y Comunicación Social (UNLP)</li>
+                                    <li>Doctorado en comunicación social. Facultad de Periodismo y Comunicación Social (UNLP)</li>
                                 </ul>
                             </div>
                         </div>

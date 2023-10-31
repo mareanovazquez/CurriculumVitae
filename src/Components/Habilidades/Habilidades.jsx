@@ -26,7 +26,7 @@ export const Habilidades = () => {
                 </div>
                 <div className="card">
                     <div className="contenidoSkills">
-                        <div className="card-body skills">
+                        <div className="skills">
                             <div>
                                 <ul className="listSkills">
                                     <li className="skillItem">

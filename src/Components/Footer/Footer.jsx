@@ -20,8 +20,8 @@ export const Footer = () => {
     <>
       <div className='contenedorFooter'>
         <div className='contenedorDescripcion'> 
-          {tituloActual === 1 && <h4>Periodista</h4>}
-            {tituloActual === 2 && <h4>Docente</h4>}
+          {tituloActual === 1 && <h4>Lic. en comunicación</h4>}
+            {tituloActual === 2 && <h4>Docente universitario</h4>}
             {tituloActual === 3 && <h4 className='desarrolladorFE'>Desarrollador frontend</h4>}
           
          {/*  <h6 >Desarrollador Front-End</h6>
@@ -58,7 +58,7 @@ export const Footer = () => {
         </Nav>
 
         <div className='contenedorDescargaCV'>
-          <button className='btn btn-outline-secondary'> DESCARGA CV</button>
+          <button className='btn btn-sm btn-outline-secondary'> DESCARGA CV</button>
 
         </div>
       </div>

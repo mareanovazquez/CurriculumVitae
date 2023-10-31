@@ -18,10 +18,232 @@ body {
     background-color: #242424;
 }
 
+/*BARRA DE NAVEGACIÓN*/
+.MenuNavBar {
+    /* Posicionamiento en la parte inferior de la pantalla */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 44444;
+    padding: 10px;
+
+    /* Centrado horizontal */
+    display: flex;
+    justify-content: center;
+
+    /* Elimina la alineación vertical (quita transform y align-items) */
+}
+
+.opcionesNavBar {
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+.opcionesNavBar :hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.opcionesNavBar small {
+    font-size: 12px;
+}
+
+/* CONTENEDOR PRINCIPAL */
 .contenedorCV {
+    /*posición y forma del contenedor*/
+    width: 90%;
+    height: 80vh;
+    /* box-shadow: 0px 0px 40px 16px rgba(137, 135, 135, 0.56); */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1%;
+
+    /*posición contenido*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
     /*decoración contenido*/
     background-color: #323232;
 }
+
+    /*INFORMACIÓN DE PERFIL*/
+
+    .contenedorHeaderyFooter {
+        /*dimensiones contenedor*/
+        width: 100%;
+        height: 90vh;
+
+        /*posicionamiento contenido*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background: rgb(50, 50, 50);
+        background: linear-gradient(360deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
+    }
+
+    .contenedorHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedorImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgPerfil {
+        width: 35%;
+        border-radius: 50%;
+        object-fit: contain;
+        object-position: center;
+
+    }
+
+    .contenedorNombre {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .contenedorNombre h2 {
+        color: #EEE5E9;
+        font-size: 1.5rem;
+    }
+
+    .contenedorFooter {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedorFooter svg {
+        color: #EEE5E9;
+    }
+
+    .contenedorFooter svg:hover {
+        transform: scale(1.2);
+        transition: 0.2s;
+    }
+
+    .contenedorDescripcion {
+        color: #ff9800;
+        text-align: center;
+
+    }
+
+    .contenedorDescripcion h4 {
+        font-size: 20px;
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0 auto;
+        border-right: 0.15em solid #ff9800;
+        animation: typing 1.5s steps(38) 0.5s 1 normal both, blink 1s steps(1) infinite;
+    }
+
+    .contenedorDescargaCV {
+        padding-top: 10px;
+    }
+
+    .contenedorDEFH {
+        width: 90%;
+        margin: 0 auto;
+        
+
+    }
+
+     /* CONTENEDOR ABOUT ME */
+     .contenedorSobreMi {
+        /*Dimensiones del contenedor*/
+        width: 100%;
+        
+        /*Disposición del contenido*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow: auto;
+    }
+
+    .contenedorSobreMi .card-header {
+        color: #ff9800;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        letter-spacing: 5px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s;
+        animation: fadeInAndMoveUp 2s forwards;
+        opacity: 0;
+        /* Definimos la opacidad inicial en 0 para que la caja esté oculta al principio */
+    }
+
+    .contenidoSobreMi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #EEE5E9;
+        padding-top: 20px;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    .biografia {
+        width: 95%;
+    }
+
+    .biografia .card-text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+    }
+
+    .biografia .card-text a {
+        text-decoration: none;
+        font-weight: 800;
+        color: #e40434;
+        letter-spacing: 2px;
+    }
+
+    .datosPerfil {
+        /*Dimensiones del contenedor*/
+        width: 95%;
+        font-family: 'Montserrat', sans-serif;
+        padding-right: 10px;
+    }
+
+    .datosPerfil p {
+        border-bottom: 2px;
+        border-bottom-color: #ff9800;
+        border-bottom-style: solid;
+        padding-right: 10px;
+
+        /*disposición del contenido*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .datosPerfil p span {
+        background-color: #ff9800;
+        font-weight: 900;
+        padding: 3px;
+        font-size: 14px;
+    }
 
 /* ANIMACIONES */
 /* barra de carga de todas las cards */
@@ -75,6 +297,38 @@ body {
 /* Bootstrap breakpoints LG y superiores */
 @media (min-width: 992px) {
 
+    /*BARRA DE NAVEGACIÓN*/
+    .MenuNavBar {
+        /*posicionamiento contenedor*/
+        position: absolute;
+        top: 50%;
+        left: -90%;
+        z-index: 44444;
+        transform: translateY(-50%);
+        padding-left: 30px;
+
+        /*posicionamiento contenido*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opcionesNavBar {
+        padding-bottom: 15px;
+        padding-right: 10px;
+    }
+
+    .opcionesNavBar :hover {
+        transform: scale(1.1);
+        transition: .3s;
+    }
+
+    .opcionesNavBar small {
+        font-size: 12px;
+    }
+
+/* CONTENEDOR PRINCIPAL */
     .contenedorCV {
         /*posición y forma del contenedor*/
         width: 85%;
@@ -96,37 +350,6 @@ body {
 
         /*decoración contenido*/
         background-color: #323232;
-    }
-
-    /*BARRA DE NAVEGACIÓN*/
-    .MenuNavBar {
-        /*posicionamiento contenedor*/
-        position: absolute;
-        top: 50%;
-        left: 0;
-        z-index: 44444;
-        transform: translateY(-50%);
-        padding-left: 10px;
-
-        /*posicionamiento contenido*/
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .opcionesNavBar {
-        padding-bottom: 15px;
-        padding-right: 10px;
-    }
-
-    .opcionesNavBar :hover {
-        transform: scale(1.1);
-        transition: .3s;
-    }
-
-    .opcionesNavBar small {
-        font-size: 12px;
     }
 
     /*INFORMACIÓN DE PERFIL*/
@@ -219,6 +442,7 @@ body {
 
     }
 
+    /* CONTENEDOR ABOUT ME */
     .contenedorSobreMi {
         /*Dimensiones del contenedor*/
         width: 95%;
@@ -287,7 +511,6 @@ body {
         border-bottom-style: solid;
         padding-right: 10px;
 
-
         /*disposición del contenido*/
         display: flex;
         flex-direction: row;
@@ -300,264 +523,264 @@ body {
         font-weight: 900;
         padding: 3px;
         font-size: 14px;
+    }
+
+    /* FORMACIÓN */
+    .contenedorFormacion {
+        width: 95%;
+        height: 100%;
+        /*Disposición del contenido*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .contenedorFormacion .card-header {
+        color: #ff9800;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        letter-spacing: 5px;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s;
+        animation: fadeInAndMoveUp 2s forwards;
+        opacity: 0;
+    }
+
+    .contenidoFormacion {
+        background-color: #EEE5E9;
+        padding-top: 10px;
+    }
+
+    .contenidoFormacion .card-title {
+        font-family: 'bebas neue', sans-serif;
+        font-size: 25px;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+    }
+
+    .contenidoFormacion .card-title span {
+        background-color: #ff9800;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .contenidoFormacion ul li {
+        list-style: none;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+    }
+
+    .contenedorHabilidades {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
 
     }
 
-/* FORMACIÓN */
-.contenedorFormacion {
-    width: 95%;
-    height: 100%;
-    /*Disposición del contenido*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+    .contenedorHabilidades .card-header {
+        color: #ff9800;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        letter-spacing: 5px;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s;
+        animation: fadeInAndMoveUp 2s forwards;
+        opacity: 0;
+    }
 
-.contenedorFormacion .card-header {
-    color: #ff9800;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    letter-spacing: 5px;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s;
-    animation: fadeInAndMoveUp 2s forwards;
-    opacity: 0;
-}
+    .contenedorHabilidades .contenidoSkills {
+        background-color: #EEE5E9;
 
-.contenidoFormacion {
-    background-color: #EEE5E9;
-    padding-top: 10px;
-}
+    }
 
-.contenidoFormacion .card-title {
-    font-family: 'bebas neue', sans-serif;
-    font-size: 25px;
-    letter-spacing: 1px;
-    padding-bottom: 10px;
-}
+    .contenedorHabilidades .contenidoSkills .skills {
+        padding-top: 20px;
 
-.contenidoFormacion .card-title span {
-    background-color: #ff9800;
-    padding: 5px;
-    border-radius: 5px;
-}
+    }
 
-.contenidoFormacion ul li {
-    list-style: none;
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-}
+    .contenedorHabilidades .contenidoSkills .listSkills {
+        list-style: none;
+        text-align: left;
+        font-size: 15px;
+        font-family: "Montserrat", sans-serif;
+        margin-left: -10px;
+    }
 
-.contenedorHabilidades {
-    width: 95%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    .contenedorHabilidades .contenidoSkills .listSkills .skillItem {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 10px;
+    }
 
-}
+    .contenedorHabilidades .contenidoSkills .listSkills li .skillText {
+        width: 25%;
+        padding-left: 5px;
+        text-align: left;
+    }
 
-.contenedorHabilidades .card-header {
-    color: #ff9800;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    letter-spacing: 5px;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s;
-    animation: fadeInAndMoveUp 2s forwards;
-    opacity: 0;
-}
-
-.contenedorHabilidades .contenidoSkills {
-    background-color: #EEE5E9;
-    
-}
-.contenedorHabilidades .contenidoSkills .skills {
-    padding-top: 20px;
-    
-}
-
-.contenedorHabilidades .contenidoSkills .listSkills {
-    list-style: none;
-    text-align: left;
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
-    margin-left: -10px;
-}
-
-.contenedorHabilidades .contenidoSkills .listSkills .skillItem {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 10px;
-}
-
-.contenedorHabilidades .contenidoSkills .listSkills li .skillText {
-    width: 25%;
-    padding-left: 5px;
-    text-align: left;
-}
-
-.contenedorHabilidades .contenidoSkills .listSkills li .skillLevel {
-    width: 65%;
-    height: 10px;
-    position: relative;
-}
+    .contenedorHabilidades .contenidoSkills .listSkills li .skillLevel {
+        width: 65%;
+        height: 10px;
+        position: relative;
+    }
 
 
-.levelRedaccion,
-.levelEdicion,
-.levelLanguage,
-.levelHtml,
-.levelCss,
-.levelJS,
-.levelReact {
-    position: absolute;
-    height: 10px;
-    width: 0%;
-    /* Se inicia en 0, pero React lo actualizará */
-    background-color: #ff9800;
-}
+    .levelRedaccion,
+    .levelEdicion,
+    .levelLanguage,
+    .levelHtml,
+    .levelCss,
+    .levelJS,
+    .levelReact {
+        position: absolute;
+        height: 10px;
+        width: 0%;
+        /* Se inicia en 0, pero React lo actualizará */
+        background-color: #ff9800;
+    }
 
-.percentageRedaccion,
-.percentageEdicion,
-.percentageLanguage,
-.percentageHtml,
-.percentageCss,
-.percentageJS,
-.percentageReact {
-    position: absolute;
-    top: 10px;
-    /* Ajusta según necesidad, para posicionar el texto arriba de la barra */
-    left: 0;
-    font-size: 12px;
-    color: #323232;
-    font-weight: 800;
-}
+    .percentageRedaccion,
+    .percentageEdicion,
+    .percentageLanguage,
+    .percentageHtml,
+    .percentageCss,
+    .percentageJS,
+    .percentageReact {
+        position: absolute;
+        top: 10px;
+        /* Ajusta según necesidad, para posicionar el texto arriba de la barra */
+        left: 0;
+        font-size: 12px;
+        color: #323232;
+        font-weight: 800;
+    }
 
-.contenedorExperiencia {
-    width: 95%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+    .contenedorExperiencia {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 
-.contenedorExperiencia .card-header {
-    color: #ff9800;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    letter-spacing: 5px;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s;
-    animation: fadeInAndMoveUp 2s forwards;
-    opacity: 0;
-}
+    .contenedorExperiencia .card-header {
+        color: #ff9800;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        letter-spacing: 5px;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s;
+        animation: fadeInAndMoveUp 2s forwards;
+        opacity: 0;
+    }
 
-.contenidoExperiencia {
-    background-color: #EEE5E9;
-    max-height: 400px;
-    overflow-y: auto;
+    .contenidoExperiencia {
+        background-color: #EEE5E9;
+        max-height: 400px;
+        overflow-y: auto;
 
-}
+    }
 
-.contenidoExperiencia ul li {
-    list-style: none;
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
+    .contenidoExperiencia ul li {
+        list-style: none;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
 
-}
+    }
 
-.contenidoExperiencia ul li small {
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-    border-bottom-color: #ff9800;
-    font-weight: 800;
-}
+    .contenidoExperiencia ul li small {
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        border-bottom-color: #ff9800;
+        font-weight: 800;
+    }
 
-.contenidoExperiencia ul li a {
-    text-decoration: none;
-    font-weight: 800;
-    color: #323232;
-}
+    .contenidoExperiencia ul li a {
+        text-decoration: none;
+        font-weight: 800;
+        color: #323232;
+    }
 
-.contenidoExperiencia ul .itemExp {
-    padding-top: 20px;
-    font-weight: 800;
-}
+    .contenidoExperiencia ul .itemExp {
+        padding-top: 20px;
+        font-weight: 800;
+    }
 
-.contenidoExperiencia ul .subItemExp {
-    padding-left: 10px;
-}
+    .contenidoExperiencia ul .subItemExp {
+        padding-left: 10px;
+    }
 
-.contenedorDocencia {
-    width: 95%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+    .contenedorDocencia {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 
-.contenedorDocencia .card-header {
-    color: #ff9800;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    letter-spacing: 5px;
-    font-size: 40px;
-    padding-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s;
-    animation: fadeInAndMoveUp 2s forwards;
-    opacity: 0;
-}
+    .contenedorDocencia .card-header {
+        color: #ff9800;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        letter-spacing: 5px;
+        font-size: 40px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s;
+        animation: fadeInAndMoveUp 2s forwards;
+        opacity: 0;
+    }
 
-.contenidoDocencia {
-    background-color: #EEE5E9;
-    max-height: 400px;
-    overflow-y: auto;
-    padding-top: 10px;
-}
+    .contenidoDocencia {
+        background-color: #EEE5E9;
+        max-height: 400px;
+        overflow-y: auto;
+        padding-top: 10px;
+    }
 
-.contenidoDocencia .card-title {
-    font-family: 'bebas neue', sans-serif;
-    font-size: 25px;
-    letter-spacing: 1px;
-    padding-bottom: 10px;
-}
+    .contenidoDocencia .card-title {
+        font-family: 'bebas neue', sans-serif;
+        font-size: 25px;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+    }
 
-.contenidoDocencia .card-title span {
-    background-color: #ff9800;
-    padding: 5px;
-    border-radius: 5px;
-}
+    .contenidoDocencia .card-title span {
+        background-color: #ff9800;
+        padding: 5px;
+        border-radius: 5px;
+    }
 
-.contenidoDocencia ul li {
-    list-style: none;
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-}
+    .contenidoDocencia ul li {
+        list-style: none;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+    }
 
-.contenidoDocencia ul li small {
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-    border-bottom-color: #ff9800;
-    font-weight: 800;
-}
+    .contenidoDocencia ul li small {
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        border-bottom-color: #ff9800;
+        font-weight: 800;
+    }
 
     /* Barra inferior de las cards */
     .dividerCard {
@@ -619,7 +842,7 @@ body {
         /*posicionamiento contenedor*/
         position: absolute;
         top: 50%;
-        left: 0;
+        left: -90%;
         z-index: 44444;
         transform: translateY(-50%);
         padding-left: 30px;
@@ -1087,6 +1310,6 @@ body {
         font-weight: 800;
     }
 
-    
+
 
 }

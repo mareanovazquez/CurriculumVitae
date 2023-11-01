@@ -125,6 +125,10 @@ body {
     justify-content: center;
 }
 
+.contenedorFooter .contenedorNombreAlt {
+    display: none;
+}
+
 .contenedorFooter svg {
     color: #EEE5E9;
 }
@@ -676,15 +680,60 @@ body {
 /* Bootstrap breakpoints MD y superiores */
 @media (min-width: 768px) {
 
-    .contenedorHeaderyFooter {
+/* CONTENEDOR PRINCIPAL */
+.contenedorHeaderyFooter {
         /*posicionamiento contenido*/
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-    }
 }
 
+
+.contenedorHeader .contenedorNombre {
+    display: none;
+}
+
+.imgPerfil {
+    width: 45%;
+
+}
+
+.contenedorFooter {
+    width: 45%;
+}
+
+.contenedorFooter .contenedorNombreAlt {
+    display: block;
+    font-size: 20px;
+    color: #EEE5E9;
+}
+
+/* CONTENEDOR ABOUT ME */
+
+.contenedorSobreMi .card-header {
+    font-size: 30px;
+    }
+
+.biografia {
+    width: 80%;
+}
+
+.biografia .card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.datosPerfil {
+    /*Dimensiones del contenedor*/
+    width: 60%;
+    font-size: 16px;
+    }
+
+.datosPerfil p span {
+    font-size: 15px;
+}
+}
 
 
 /* Entre 992px y 1199px */

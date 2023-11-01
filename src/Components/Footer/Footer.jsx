@@ -19,13 +19,11 @@ export const Footer = () => {
   return (
     <>
       <div className='contenedorFooter'>
+        <div className='contenedorNombreAlt'><h2>Mariano Dario Vazquez</h2></div>
         <div className='contenedorDescripcion'> 
           {tituloActual === 1 && <h4>Lic. en comunicación</h4>}
             {tituloActual === 2 && <h4>Docente universitario</h4>}
             {tituloActual === 3 && <h4 className='desarrolladorFE'>Desarrollador frontend</h4>}
-          
-         {/*  <h6 >Desarrollador Front-End</h6>
-          <h6 >Docente universitario</h6> */}
         </div>
 
         <Nav variant="underline" defaultActiveKey="/home" className=' contenedorContacto justify-content-center'>

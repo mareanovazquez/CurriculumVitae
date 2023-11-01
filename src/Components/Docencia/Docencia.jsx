@@ -29,7 +29,7 @@ export const Docencia = () => {
                                     <li className="h5 card-title">
                                         <span>INSTITUTO SUPERIOR EN REGISTRACIÓN Y PUBLICIDAD INMOBILIARIA</span></li>
                                         <li className="h6"> <span>
-                                        TÉCNICO EN REGISTRACIÓN Y PUBLICIDAD INMOBILIARIA</span></li>
+                                        TECNICATURA EN REGISTRACIÓN Y PUBLICIDAD INMOBILIARIA</span></li>
                                     <li>Comunicación escrita <small>2018-2022</small> </li>
                                     <li>Revista registral <small>2018-2022</small></li>
                                 </ul>

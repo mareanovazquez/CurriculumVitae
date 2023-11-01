@@ -166,7 +166,7 @@ body {
     }
 
      /* CONTENEDOR ABOUT ME */
-      .contenedorSobreMi {
+        .contenedorSobreMi {
         /*Dimensiones del contenedor*/
         width: 100%;
         
@@ -249,6 +249,269 @@ body {
         padding: 3px;
         font-size: 12px;
     }
+/* FORMACIÓN */
+.contenedorFormacion {
+    width: 100%;
+    
+    /*Disposición del contenido*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contenedorFormacion .card-header {
+    color: #ff9800;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+    animation: fadeInAndMoveUp 2s forwards;
+    opacity: 0;
+}
+
+.contenidoFormacion {
+    background-color: #EEE5E9;
+    padding-top: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.contenidoFormacion .card-title {
+    font-family: 'bebas neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.contenidoFormacion .card-title span {
+    background-color: #ff9800;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.contenidoFormacion ul li {
+    list-style: none;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+/* DOCENCIA */
+.contenedorDocencia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contenedorDocencia .card-header {
+    color: #ff9800;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+    animation: fadeInAndMoveUp 2s forwards;
+    opacity: 0;
+}
+
+.contenidoDocencia {
+    background-color: #EEE5E9;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-top: 10px;
+}
+
+.contenidoDocencia .card-title {
+    font-family: 'bebas neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.contenidoDocencia .card-title span {
+    background-color: #ff9800;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.contenidoDocencia ul li {
+    list-style: none;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.contenidoDocencia ul li small {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #ff9800;
+    font-weight: 800;
+}
+
+/* EXPERIENCIA */
+.contenedorExperiencia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contenedorExperiencia .card-header {
+    color: #ff9800;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+    animation: fadeInAndMoveUp 2s forwards;
+    opacity: 0;
+}
+
+.contenidoExperiencia {
+    background-color: #EEE5E9;
+    max-height: 400px;
+    overflow-y: auto;
+
+}
+
+.contenidoExperiencia ul li {
+    list-style: none;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+
+}
+
+.contenidoExperiencia ul li small {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #ff9800;
+    font-weight: 800;
+}
+
+.contenidoExperiencia ul li a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #323232;
+}
+
+.contenidoExperiencia ul .itemExp {
+    padding-top: 20px;
+    font-weight: 800;
+}
+
+.contenidoExperiencia ul .subItemExp {
+    padding-left: 10px;
+}
+
+/* HABILIDADES SKILLS */
+.contenedorHabilidades {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.contenedorHabilidades .card-header {
+    color: #ff9800;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+    animation: fadeInAndMoveUp 2s forwards;
+    opacity: 0;
+}
+
+.contenedorHabilidades .contenidoSkills {
+    background-color: #EEE5E9;
+
+}
+
+.contenedorHabilidades .contenidoSkills .skills {
+    padding-top: 20px;
+
+}
+
+.contenedorHabilidades .contenidoSkills .listSkills {
+    list-style: none;
+    text-align: left;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    margin-left: -10px;
+}
+
+.contenedorHabilidades .contenidoSkills .listSkills .skillItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.contenedorHabilidades .contenidoSkills .listSkills li .skillText {
+    width: 25%;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.contenedorHabilidades .contenidoSkills .listSkills li .skillLevel {
+    width: 65%;
+    height: 10px;
+    position: relative;
+}
+
+
+.levelRedaccion,
+.levelEdicion,
+.levelLanguage,
+.levelHtml,
+.levelCss,
+.levelJS,
+.levelReact {
+    position: absolute;
+    height: 10px;
+    width: 0%;
+    /* Se inicia en 0, pero React lo actualizará */
+    background-color: #ff9800;
+}
+
+.percentageRedaccion,
+.percentageEdicion,
+.percentageLanguage,
+.percentageHtml,
+.percentageCss,
+.percentageJS,
+.percentageReact {
+    position: absolute;
+    top: 10px;
+    /* Ajusta según necesidad, para posicionar el texto arriba de la barra */
+    left: 0;
+    font-size: 12px;
+    color: #323232;
+    font-weight: 800;
+}
+
 
 /* ANIMACIONES */
 /* barra de carga de todas las cards */
@@ -672,6 +935,8 @@ body {
         font-weight: 800;
     }
 
+    /* EXPERIENCIA */
+
     .contenedorExperiencia {
         width: 95%;
         height: 100%;
@@ -730,6 +995,7 @@ body {
         padding-left: 10px;
     }
 
+    /* DOCENCIA */
     .contenedorDocencia {
         width: 95%;
         height: 100%;

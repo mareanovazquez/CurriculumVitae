@@ -55,7 +55,7 @@ body {
     width: 90%;
     height: 90vh;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 1%;
@@ -80,8 +80,8 @@ body {
 
         /*posicionamiento contenido*/
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         background: rgb(50, 50, 50);
         background: linear-gradient(360deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
@@ -512,6 +512,9 @@ body {
     font-weight: 800;
 }
 
+.dividerBar , .dividerCard {
+    display: none;
+}
 
 /* ANIMACIONES */
 /* barra de carga de todas las cards */
@@ -553,11 +556,23 @@ body {
 
 /* Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+
+   
+}
 
 /* Entre 768px y 991px */
 /* Bootstrap breakpoints MD y superiores */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    .contenedorHeaderyFooter {
+        /*posicionamiento contenido*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        }
+}
 
 
 
@@ -1055,6 +1070,7 @@ body {
 
     /* Barra inferior de las cards */
     .dividerCard {
+        display: block;
         width: 98%;
         height: 2px;
         margin-right: auto;
@@ -1063,6 +1079,7 @@ body {
     }
 
     .dividerBar {
+        display: block;
         height: 100%;
         width: 0%;
         /* Comienza sin llenado */
@@ -1356,28 +1373,6 @@ body {
         text-align: left;
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
-    }
-
-    .dividerCard {
-        width: 98%;
-        height: 2px;
-        margin-right: auto;
-        margin-left: auto;
-        position: relative;
-    }
-
-    .dividerBar {
-        height: 100%;
-        width: 0%;
-        /* Comienza sin llenado */
-        background-color: #ff9800;
-        /* Color de la barra de progreso */
-        position: absolute;
-        top: 0;
-        left: 0;
-        /* Animación */
-        animation: fillBar 4s ease-in-out forwards;
-        /* Puedes cambiar la duración a lo que necesites */
     }
 
     .contenedorHabilidades {

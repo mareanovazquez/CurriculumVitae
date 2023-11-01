@@ -81,7 +81,7 @@ body {
         /*posicionamiento contenido*/
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         background: rgb(50, 50, 50);
         background: linear-gradient(360deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
@@ -111,15 +111,14 @@ body {
     .contenedorNombre {
         text-align: center;
         padding-top: 20px;
-    }
+        }
 
     .contenedorNombre h2 {
         color: #EEE5E9;
-        font-size: 1.5rem;
+        font-size: 25px;
     }
 
     .contenedorFooter {
-        padding-top: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -169,13 +168,12 @@ body {
         .contenedorSobreMi {
         /*Dimensiones del contenedor*/
         width: 100%;
-        
         /*Disposición del contenido*/
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        overflow: auto;
+        
     }
 
     .contenedorSobreMi .card-header {
@@ -184,7 +182,7 @@ body {
         font-weight: 700;
         padding-bottom: 10px;
         letter-spacing: 5px;
-        font-size: 30px;
+        font-size: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -197,11 +195,11 @@ body {
     .contenidoSobreMi {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         background-color: #EEE5E9;
-        padding-top: 10px;
-        max-height: 400px;
+        padding-top: 5px;
+        max-height: 300px;
         overflow-y: auto;
     }
 
@@ -223,11 +221,12 @@ body {
 
     .datosPerfil {
         /*Dimensiones del contenedor*/
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
         font-family: 'Montserrat', sans-serif;
         font-size: 13px;
         padding-right: 10px;
+        padding-top: 10px;
     }
 
     .datosPerfil p {
@@ -249,6 +248,7 @@ body {
         padding: 3px;
         font-size: 12px;
     }
+
 /* FORMACIÓN */
 .contenedorFormacion {
     width: 100%;
@@ -264,7 +264,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     letter-spacing: 5px;
-    font-size: 30px;
+    font-size: 25px;
     padding-bottom: 10px;
     display: flex;
     align-items: center;
@@ -276,8 +276,8 @@ body {
 
 .contenidoFormacion {
     background-color: #EEE5E9;
-    padding-top: 10px;
-    max-height: 400px;
+    padding-top: 5px;
+    max-height: 300px;
     overflow-y: auto;
 }
 
@@ -285,7 +285,7 @@ body {
     font-family: 'bebas neue', sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .contenidoFormacion .card-title span {
@@ -314,8 +314,8 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     letter-spacing: 5px;
-    font-size: 30px;
-    padding-bottom: 10px;
+    font-size: 25px;
+    padding-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -326,9 +326,9 @@ body {
 
 .contenidoDocencia {
     background-color: #EEE5E9;
-    max-height: 400px;
+    max-height: 300px;
     overflow-y: auto;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .contenidoDocencia .card-title {
@@ -371,8 +371,8 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     letter-spacing: 5px;
-    font-size: 30px;
-    padding-bottom: 10px;
+    font-size: 25px;
+    padding-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -383,17 +383,18 @@ body {
 
 .contenidoExperiencia {
     background-color: #EEE5E9;
-    max-height: 400px;
+    max-height: 300px;
     overflow-y: auto;
-
 }
 
+.contenidoExperiencia ul {
+    padding-left: 0;
+}
 .contenidoExperiencia ul li {
     list-style: none;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-
 }
 
 .contenidoExperiencia ul li small {
@@ -421,7 +422,6 @@ body {
 /* HABILIDADES SKILLS */
 .contenedorHabilidades {
     width: 100%;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -433,7 +433,8 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     letter-spacing: 5px;
-    font-size: 30px;
+    font-size: 25px;
+    padding-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -444,7 +445,11 @@ body {
 
 .contenedorHabilidades .contenidoSkills {
     background-color: #EEE5E9;
-
+    height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contenedorHabilidades .contenidoSkills .skills {
@@ -470,17 +475,17 @@ body {
 }
 
 .contenedorHabilidades .contenidoSkills .listSkills li .skillText {
-    width: 25%;
+    width: 30%;
     padding-left: 5px;
     text-align: left;
+    font-size: 14px;
 }
 
 .contenedorHabilidades .contenidoSkills .listSkills li .skillLevel {
-    width: 65%;
+    width: 60%;
     height: 10px;
     position: relative;
 }
-
 
 .levelRedaccion,
 .levelEdicion,
@@ -558,7 +563,17 @@ body {
 /* Bootstrap breakpoints SM y superiores */
 @media (min-width: 576px) {
 
-   
+    /* HEADER Y FOOTER */
+    .contenedorNombre h2 {
+        font-size: 30px;
+    }
+
+    .contenedorDescripcion h4 {
+        color: #EEE5E9;
+        font-size: 25px;
+        color: #ff9800;
+    }
+
 }
 
 /* Entre 768px y 991px */

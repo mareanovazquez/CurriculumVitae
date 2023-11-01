@@ -66,193 +66,192 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
+
     /*decoración contenido*/
     background-color: #323232;
 }
 
-    /*INFORMACIÓN DE PERFIL*/
+/*INFORMACIÓN DE PERFIL*/
 
-    .contenedorHeaderyFooter {
-        /*dimensiones contenedor*/
-        width: 100%;
-        height: 90vh;
+.contenedorHeaderyFooter {
+    /*dimensiones contenedor*/
+    width: 100%;
+    height: 90vh;
 
-        /*posicionamiento contenido*/
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        background: rgb(50, 50, 50);
-        background: linear-gradient(360deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
-    }
+    /*posicionamiento contenido*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(50, 50, 50);
+    background: linear-gradient(360deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
+}
 
-    .contenedorHeader {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+.contenedorHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-    .contenedorImg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.contenedorImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .imgPerfil {
-        width: 35%;
-        border-radius: 50%;
-        object-fit: contain;
-        object-position: center;
+.imgPerfil {
+    width: 35%;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: center;
 
-    }
+}
 
-    .contenedorNombre {
-        text-align: center;
-        padding-top: 20px;
-        }
+.contenedorNombre {
+    text-align: center;
+    padding-top: 20px;
+}
 
-    .contenedorNombre h2 {
-        color: #EEE5E9;
-        font-size: 25px;
-    }
+.contenedorNombre h2 {
+    color: #EEE5E9;
+    font-size: 25px;
+}
 
-    .contenedorFooter {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+.contenedorFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-    .contenedorFooter svg {
-        color: #EEE5E9;
-    }
+.contenedorFooter svg {
+    color: #EEE5E9;
+}
 
-    .contenedorFooter svg:hover {
-        transform: scale(1.2);
-        transition: 0.2s;
-    }
+.contenedorFooter svg:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
 
-    .contenedorDescripcion {
-        color: #ff9800;
-        text-align: center;
+.contenedorDescripcion {
+    color: #ff9800;
+    text-align: center;
 
-    }
+}
 
-    .contenedorDescripcion h4 {
-        font-size: 20px;
-        width: 0;
-        overflow: hidden;
-        white-space: nowrap;
-        margin: 0 auto;
-        border-right: 0.15em solid #ff9800;
-        animation: typing 1.5s steps(38) 0.5s 1 normal both, blink 1s steps(1) infinite;
-    }
+.contenedorDescripcion h4 {
+    font-size: 20px;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    border-right: 0.15em solid #ff9800;
+    animation: typing 1.5s steps(38) 0.5s 1 normal both, blink 1s steps(1) infinite;
+}
 
-    .contenedorDescargaCV {
-        padding-top: 10px;
-    }
+.contenedorDescargaCV {
+    padding-top: 10px;
+}
 
-    .contenedorDEFH {
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        
+.contenedorDEFH {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    }
 
-     /* CONTENEDOR ABOUT ME */
-        .contenedorSobreMi {
-        /*Dimensiones del contenedor*/
-        width: 100%;
-        /*Disposición del contenido*/
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        
-    }
+}
 
-    .contenedorSobreMi .card-header {
-        color: #ff9800;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 700;
-        padding-bottom: 10px;
-        letter-spacing: 5px;
-        font-size: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.4s;
-        animation: fadeInAndMoveUp 2s forwards;
-        opacity: 0;
-        /* Definimos la opacidad inicial en 0 para que la caja esté oculta al principio */
-    }
+/* CONTENEDOR ABOUT ME */
+.contenedorSobreMi {
+    /*Dimensiones del contenedor*/
+    width: 100%;
+    /*Disposición del contenido*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 
-    .contenidoSobreMi {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        background-color: #EEE5E9;
-        padding-top: 5px;
-        max-height: 300px;
-        overflow-y: auto;
-    }
+}
 
-    .biografia {
-        width: 95%;
-    }
+.contenedorSobreMi .card-header {
+    color: #ff9800;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+    animation: fadeInAndMoveUp 2s forwards;
+    opacity: 0;
+    /* Definimos la opacidad inicial en 0 para que la caja esté oculta al principio */
+}
 
-    .biografia .card-text {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 13px;
-    }
+.contenidoSobreMi {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #EEE5E9;
+    padding-top: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+}
 
-    .biografia .card-text a {
-        text-decoration: none;
-        font-weight: 800;
-        color: #e40434;
-        letter-spacing: 2px;
-    }
+.biografia {
+    width: 95%;
+}
 
-    .datosPerfil {
-        /*Dimensiones del contenedor*/
-        width: 70%;
-        margin: 0 auto;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 13px;
-        padding-right: 10px;
-        padding-top: 10px;
-    }
+.biografia .card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
 
-    .datosPerfil p {
-        border-bottom: 2px;
-        border-bottom-color: #ff9800;
-        border-bottom-style: solid;
-        padding-right: 10px;
+.biografia .card-text a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #e40434;
+    letter-spacing: 2px;
+}
 
-        /*disposición del contenido*/
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+.datosPerfil {
+    /*Dimensiones del contenedor*/
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    padding-top: 10px;
+}
 
-    .datosPerfil p span {
-        background-color: #ff9800;
-        font-weight: 900;
-        padding: 3px;
-        font-size: 12px;
-    }
+.datosPerfil p {
+    border-bottom: 2px;
+    border-bottom-color: #ff9800;
+    border-bottom-style: solid;
+    padding-right: 10px;
+
+    /*disposición del contenido*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.datosPerfil p span {
+    background-color: #ff9800;
+    font-weight: 900;
+    padding: 3px;
+    font-size: 12px;
+}
 
 /* FORMACIÓN */
 .contenedorFormacion {
     width: 100%;
-    
+
     /*Disposición del contenido*/
     display: flex;
     flex-direction: column;
@@ -390,6 +389,7 @@ body {
 .contenidoExperiencia ul {
     padding-left: 0;
 }
+
 .contenidoExperiencia ul li {
     list-style: none;
     text-align: left;
@@ -517,7 +517,8 @@ body {
     font-weight: 800;
 }
 
-.dividerBar , .dividerCard {
+.dividerBar,
+.dividerCard {
     display: none;
 }
 
@@ -574,6 +575,101 @@ body {
         color: #ff9800;
     }
 
+    /* ABOUT ME */
+    .biografia {
+        width: 95%;
+    }
+
+    .biografia .card-text {
+        font-size: 16px;
+    }
+
+    .datosPerfil {
+        font-size: 16px;
+    }
+
+    .datosPerfil p span {
+        font-size: 14px;
+    }
+
+    /* FORMACIÓN */
+
+    .contenedorFormacion .card-header {
+        padding-bottom: 10px;
+
+    }
+
+    .contenidoFormacion .card-title {
+        font-size: 25px;
+    }
+
+    .contenidoFormacion ul li {
+        font-size: 16px;
+    }
+
+    /* DOCENCIA */
+
+    .contenedorDocencia .card-header {
+        padding-bottom: 10px;
+    }
+
+
+    .contenidoDocencia .card-title {
+        font-size: 25px;
+    }
+
+    .contenidoDocencia ul li {
+        font-size: 16px;
+    }
+
+    /* EXPERIENCIA */
+
+    .contenedorExperiencia .card-header {
+        padding-bottom: 10px;
+    }
+
+
+    .contenidoExperiencia ul .itemExp {
+        font-size: 20px;
+    }
+
+    .contenidoExperiencia ul .subItemExp {
+        font-size: 18px;
+    }
+
+    /* HABILIDADES SKILLS */
+    .contenedorHabilidades .card-header {
+        padding-bottom: 10px;
+    }
+
+    .contenedorHabilidades .contenidoSkills .skills {
+        padding-top: 15px;
+    }
+
+    .contenedorHabilidades .contenidoSkills .listSkills {
+        font-size: 20px;
+    }
+
+    .contenedorHabilidades .contenidoSkills .listSkills .skillItem {
+        padding-bottom: 10px;
+    }
+
+    .contenedorHabilidades .contenidoSkills .listSkills li .skillText {
+        padding-left: 0px;
+        font-size: 20px;
+    }
+
+    .percentageRedaccion,
+    .percentageEdicion,
+    .percentageLanguage,
+    .percentageHtml,
+    .percentageCss,
+    .percentageJS,
+    .percentageReact {
+        font-size: 14px;
+    }
+
+
 }
 
 /* Entre 768px y 991px */
@@ -586,7 +682,7 @@ body {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        }
+    }
 }
 
 
@@ -626,7 +722,7 @@ body {
         font-size: 12px;
     }
 
-/* CONTENEDOR PRINCIPAL */
+    /* CONTENEDOR PRINCIPAL */
     .contenedorCV {
         /*posición y forma del contenedor*/
         width: 85%;

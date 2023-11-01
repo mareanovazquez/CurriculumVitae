@@ -15,8 +15,8 @@ export const AboutMe = () => {
                                 En la actualidad me desempeño como docente de grado y posgrado en la FPyCS, en el área de informática de la Suprema Corte Buenos Aires (SCBA) y también soy el responsable de desarrollo web de los proyectos de <a href="https://estudiorec.com.ar" target="_blank">ESTUDIO REC</a>.</p>
                         </div>
                         <div className="datosPerfil">
-                            <p> <span>EDAD:</span> 42 años </p>
-                            <p> <span>ESTADO CIVIL:</span> Soltero</p>
+                            <p> <span>EDAD:</span> 43 años </p>
+                            <p> <span>ESTADO CIVIL:</span> Casado</p>
                             <p> <span>UBICACIÓN:</span>CABA</p>
                             <p><span>DISPONIBILIDAD:</span>Freelance</p>
                         </div>

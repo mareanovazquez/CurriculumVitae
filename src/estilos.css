@@ -53,7 +53,7 @@ body {
 .contenedorCV {
     /*posición y forma del contenedor*/
     width: 90%;
-    height: 90vh;
+    height: 80vh;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -81,7 +81,7 @@ body {
     /*posicionamiento contenido*/
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
     background: rgb(50, 50, 50);
     background: linear-gradient(360deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
@@ -203,7 +203,7 @@ body {
     align-items: center;
     background-color: #EEE5E9;
     padding-top: 5px;
-    max-height: 300px;
+    max-height: 250px;
     overflow-y: auto;
 }
 
@@ -280,7 +280,7 @@ body {
 .contenidoFormacion {
     background-color: #EEE5E9;
     padding-top: 5px;
-    max-height: 300px;
+    max-height: 250px;
     overflow-y: auto;
 }
 
@@ -329,7 +329,7 @@ body {
 
 .contenidoDocencia {
     background-color: #EEE5E9;
-    max-height: 300px;
+    max-height: 250px;
     overflow-y: auto;
     padding-top: 5px;
 }
@@ -386,7 +386,7 @@ body {
 
 .contenidoExperiencia {
     background-color: #EEE5E9;
-    max-height: 300px;
+    max-height: 250px;
     overflow-y: auto;
 }
 
@@ -760,7 +760,7 @@ body {
 
     .contenedorHabilidades .contenidoSkills {
         height: auto;
-        max-height: 300px;
+        max-height: 250px;
     }
 }
 

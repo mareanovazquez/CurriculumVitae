@@ -56,7 +56,7 @@ export const Footer = () => {
         </Nav>
 
         <div className='contenedorDescargaCV'>
-          <button className='btn btn-sm btn-outline-secondary'> DESCARGA CV</button>
+          <button className='btn btn-sm btn-outline-secondary'>  DESCARGA CV</button>
 
         </div>
       </div>

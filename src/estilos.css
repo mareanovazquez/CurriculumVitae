@@ -733,6 +733,30 @@ body {
 .datosPerfil p span {
     font-size: 15px;
 }
+
+/* FORMACIÓN */
+
+.contenedorFormacion .card-header {
+    font-size: 30px;
+
+}
+
+/* DOCENCIA */
+.contenedorDocencia .card.card-header {
+    font-size: 30px;
+}
+
+/* EXPERIENCIA */
+
+.contenedorExperiencia .card-header {
+    font-size: 30px;
+}
+
+/* SKILLS */
+
+.contenedorHabilidades .card-header {
+    font-size: 30px;
+}
 }
 
 
@@ -746,7 +770,7 @@ body {
         position: absolute;
         top: 50%;
         left: -90%;
-        z-index: 44444;
+        z-index: -2;
         transform: translateY(-50%);
         padding-left: 30px;
 

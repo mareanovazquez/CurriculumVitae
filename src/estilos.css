@@ -938,7 +938,7 @@ body {
 
     .contenidoSobreMi {
         justify-content: center;
-        max-height: 500px;
+        max-height: 400px;
     }
 
     .biografia {
@@ -972,7 +972,7 @@ body {
 
     .contenidoFormacion {
 
-        max-height: 500px;
+        max-height: 400px;
     }
 
     /* DOCENCIA */
@@ -997,7 +997,7 @@ body {
     }
 
     .contenidoDocencia {
-        max-height: 500px;
+        max-height: 400px;
     }
 
     /* EXPERIENCIA */
@@ -1022,7 +1022,7 @@ body {
     }
 
     .contenidoExperiencia {
-        max-height: 500px;
+        max-height: 400px;
     }
 
     .contenidoExperiencia ul .itemExp {
@@ -1055,7 +1055,7 @@ body {
 
     .contenedorHabilidades .contenidoSkills {
         height: auto;
-        max-height: 500px;
+        max-height: 400px;
     }
 
     .contenedorHabilidades .contenidoSkills .listSkills {

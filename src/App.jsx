@@ -28,10 +28,12 @@ function App() {
           <div className='contenedorDEFH'>
           <Routes>
             <Route path='/' element={<AboutMe/>}/>
+            <Route path='/sobremi' element={<AboutMe/>}/>
             <Route path='/docencia' element={<Docencia />} />
             <Route path='/experiencia' element={<Experiencia />} />
             <Route path='/formacion' element={<Formacion />} />
             <Route path='/habilidades' element={<Habilidades />} />
+            <Route path='/*' element={<AboutMe/>}/>
           </Routes>
           </div>
         </div>

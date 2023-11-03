@@ -20,7 +20,7 @@ export function NavBar() {
     return (
         <div className="MenuNavBar" >
 
-            <NavLink className='opcionesNavBar' to='/'>
+            <NavLink className='opcionesNavBar' to='/sobremi'>
                 <button className={`my-button ${activeButton === 1 ? 'btn btn-secondary' : 'btn btn-outline-secondary'}`}
                     onClick={() => toggleActive(1)}>
                     <FontAwesomeIcon icon={faGlasses} /> 

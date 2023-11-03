@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 
+
+
 export const Footer = () => {
 
   const [tituloActual, setTituloActual] = useState(1)
@@ -15,6 +17,16 @@ export const Footer = () => {
         // Limpiamos el temporizador si el componente se desmonta
         return () => clearTimeout(timer);
     }, [tituloActual]);
+
+   /*  const pdfFileURL = '../../assets/CV/curriculum'; // Reemplaza con la ruta correcta al archivo PDF
+
+  const handleDownloadPDF = () => {
+    const link = document.createElement('a');
+    link.href = pdfFileURL;
+    link.download = 'mi_cv.pdf'; // Cambia el nombre de archivo según lo desees
+    link.click();
+  };
+ */
 
   return (
     <>
@@ -56,7 +68,7 @@ export const Footer = () => {
         </Nav>
 
         <div className='contenedorDescargaCV'>
-          <button className='btn btn-sm btn-outline-secondary'>  DESCARGA CV</button>
+          <button className='btn btn-sm btn-outline-secondary descargaCV'>  DESCARGA CV</button>
 
         </div>
       </div>

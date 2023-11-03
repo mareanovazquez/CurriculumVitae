@@ -158,6 +158,10 @@ body {
     padding-top: 10px;
 }
 
+.contenedorDescargaCV .descargaCV {
+    display: none;
+}
+
 .contenedorDEFH {
     width: 90%;
     margin: 0 auto;
@@ -902,6 +906,10 @@ body {
     .contenedorFooter svg:hover {
         transform: scale(1.2);
         transition: 0.2s;
+    }
+
+    .contenedorDescargaCV .descargaCV {
+        display: block;
     }
 
     .contenedorDescripcion {

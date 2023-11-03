@@ -213,7 +213,7 @@ body {
 
 .biografia .card-text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .biografia .card-text a {
@@ -228,7 +228,7 @@ body {
     width: 70%;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     padding-top: 10px;
 }
 
@@ -249,7 +249,7 @@ body {
     background-color: #ff9800;
     font-weight: 900;
     padding: 3px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /* FORMACIÓN */
@@ -715,6 +715,10 @@ body {
         font-size: 30px;
     }
 
+    .contenidoSobreMi {
+        max-height: 400px;
+    }
+
     .biografia {
         width: 80%;
     }
@@ -738,7 +742,10 @@ body {
 
     .contenedorFormacion .card-header {
         font-size: 30px;
+    }
 
+    .contenidoFormacion {
+        max-height: 400px;
     }
 
     /* DOCENCIA */
@@ -746,10 +753,18 @@ body {
         font-size: 30px;
     }
 
+    .contenidoDocencia {
+        max-height: 400px;
+    }
+
     /* EXPERIENCIA */
 
     .contenedorExperiencia .card-header {
         font-size: 30px;
+    }
+
+    .contenidoExperiencia {
+        max-height: 400px;
     }
 
     /* SKILLS */
@@ -760,7 +775,7 @@ body {
 
     .contenedorHabilidades .contenidoSkills {
         height: auto;
-        max-height: 250px;
+        max-height: 400px;
     }
 }
 

@@ -816,6 +816,10 @@ body {
         transition: .3s;
     }
 
+    .btn-descargaCV {
+        display: none;
+    }
+
 
     /* CONTENEDOR PRINCIPAL */
     .contenedorCV {

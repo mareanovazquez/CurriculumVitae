@@ -712,8 +712,10 @@ body {
 
     .contenedorFooter .contenedorNombreAlt {
         display: block;
-        font-size: 20px;
+        text-align: left;
         color: #EEE5E9;
+        font-family: 'Roboto Slab', serif;
+        padding-right: 10px;
     }
 
     /* CONTENEDOR ABOUT ME */

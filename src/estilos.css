@@ -59,7 +59,7 @@ body {
     top: 5%;
     left: 5%;
     border-radius: 1%;
-    
+
     /*posición contenido*/
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    }
+}
 
 .contenedorHeader {
     display: flex;
@@ -115,7 +115,7 @@ body {
     color: #EEE5E9;
     font-size: 25px;
     font-family: 'Roboto Slab', serif;
-    }
+}
 
 .contenedorFooter {
     display: flex;
@@ -183,7 +183,7 @@ body {
 
 }
 
-.contenedorSobreMi .card-header {
+.contenedorSobreMi .encabezadoSobreMi {
     color: #ff9800;
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
@@ -233,7 +233,7 @@ body {
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    
+
 }
 
 .datosPerfil p {
@@ -251,7 +251,7 @@ body {
 
 .datosPerfil p span {
     background-color: #ff9800;
-    color:#EEE5E9;
+    color: #EEE5E9;
     font-weight: 900;
     padding: 3px;
     font-size: 14px;
@@ -267,7 +267,7 @@ body {
     justify-content: space-evenly;
 }
 
-.contenedorFormacion .card-header {
+.contenedorFormacion .encabezadoFormacion{
     color: #ff9800;
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
@@ -319,7 +319,7 @@ body {
     justify-content: space-evenly;
 }
 
-.contenedorDocencia .card-header {
+.contenedorDocencia .encabezadoDocencia{
     color: #ff9800;
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
@@ -339,7 +339,7 @@ body {
     max-height: 250px;
     overflow-y: auto;
     border-radius: 1%;
-        padding: 10px;
+    padding: 10px;
 }
 
 .contenidoDocencia .titleDocencia {
@@ -596,7 +596,7 @@ body {
         width: 95%;
     }
 
-    .biografia .card-text {
+    .biografia .textoBiografia{
         font-size: 16px;
     }
 
@@ -625,12 +625,12 @@ body {
 
     /* DOCENCIA */
 
-    .contenedorDocencia .card-header {
+    .contenedorDocencia .encabezadoDocencia{
         padding-bottom: 10px;
     }
 
 
-    .contenidoDocencia .card-title {
+    .contenidoDocencia .titleDocencia{
         font-size: 25px;
     }
 
@@ -640,7 +640,7 @@ body {
 
     /* EXPERIENCIA */
 
-    .contenedorExperiencia .headerExperiencia {
+    .contenedorExperiencia .encabezadoExperiencia {
         padding-bottom: 10px;
     }
 
@@ -672,7 +672,7 @@ body {
 
     .contenedorHabilidades .contenidoSkills .listSkills li .skillText {
         padding-left: 0px;
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .percentageRedaccion,
@@ -716,7 +716,7 @@ body {
     }
 
     .contenedorFooter .contenedorNombreAlt {
-        
+
         display: block;
         text-align: left;
         color: #EEE5E9;
@@ -726,7 +726,7 @@ body {
 
     /* CONTENEDOR ABOUT ME */
 
-    .contenedorSobreMi .card-header {
+    .contenedorSobreMi .encabezadoSobreMi{
         font-size: 30px;
     }
 
@@ -738,7 +738,7 @@ body {
         width: 80%;
     }
 
-    .biografia .card-text {
+    .biografia .textoBiografia {
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
     }
@@ -851,13 +851,12 @@ body {
         /*Forma del contenedor*/
         border-radius: 1%;
         height: 90vh;
-        
+
         /*posición contenido del CV*/
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        
 
         /*decoración contenido*/
         background: linear-gradient(270deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
@@ -875,7 +874,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
     }
 
     .contenedorHeader {
@@ -959,7 +958,6 @@ body {
     .contenedorDEFH {
         width: 55%;
         height: 90vh;
-
     }
 
     /* CONTENEDOR ABOUT ME */
@@ -986,9 +984,9 @@ body {
     }
 
     .contenidoSobreMi {
-        justify-content: start;
+        justify-content: center;
         max-height: 400px;
-        
+
     }
 
     .biografia {
@@ -1001,7 +999,7 @@ body {
     }
 
     .textoBiografia a {
-        color:#e40434;
+        color: #e40434;
         text-decoration: none;
         font-weight: 700;
         letter-spacing: 1px;
@@ -1012,13 +1010,13 @@ body {
         width: 80%;
         font-size: 15px;
     }
-    
+
 
     /* FORMACIÓN */
     .contenedorFormacion {
         /* Dimensiones del contenedor */
         height: 90vh;
-        
+
     }
 
     .contenedorFormacion .encabezadoFormacion {
@@ -1036,15 +1034,17 @@ body {
     }
 
     .contenidoFormacion {
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         max-height: 400px;
-        border-radius: 1%;
-    }
+        }
 
     .formacion {
         padding: 10px;
-        
+
     }
+
     /* DOCENCIA */
     .contenedorDocencia {
         /* Dimensiones del contenedor */
@@ -1068,7 +1068,10 @@ body {
 
     .contenidoDocencia {
         max-height: 400px;
-        
+    }
+
+    .contenidoDocencia .docencia {
+        padding-top: 10px;
     }
 
     /* EXPERIENCIA */
@@ -1094,14 +1097,15 @@ body {
 
     .contenidoExperiencia {
         max-height: 400px;
+        padding-left: 20px;
     }
 
     .contenidoExperiencia ul .itemExp {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .contenidoExperiencia ul .subItemExp {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     /* HABILIDADES */
@@ -1132,7 +1136,7 @@ body {
     .contenedorHabilidades .contenidoSkills .listSkills {
         list-style: none;
         text-align: left;
-        font-size: 15px;
+        font-size: 14px;
         font-family: "Montserrat", sans-serif;
         margin-left: -10px;
     }
@@ -1150,6 +1154,7 @@ body {
         width: 25%;
         padding-left: 5px;
         text-align: left;
+        font-size: 18px;
     }
 
     .contenedorHabilidades .contenidoSkills .listSkills li .skillLevel {
@@ -1233,6 +1238,6 @@ body {
     }
 
 
-    
+
 
 }

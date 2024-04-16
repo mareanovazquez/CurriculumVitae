@@ -10,7 +10,7 @@ import { Header } from './Components/Header/Header'
 import { Formacion } from './Components/Formacion/Formacion'
 import { Habilidades } from './Components/Habilidades/Habilidades'
 import { Footer } from './Components/Footer/Footer'
-import {AboutMe} from './Components/AboutMe/AboutMe'
+import { AboutMe } from './Components/AboutMe/AboutMe'
 
 
 function App() {
@@ -20,22 +20,25 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar />
-        <div className='contenedorCV'>
-          <div className='contenedorHeaderyFooter'>
-          <Header />
-          <Footer />
+        <div className='contenedor-general'>
+          <div className='contenedorCV'>
+            <div className='contenedorHeaderyFooter'>
+              <Header />
+              <Footer />
+            </div>
+            <div className='contenedorDEFH'>
+              <Routes>
+                <Route path='/' element={<AboutMe />} />
+                <Route path='/sobremi' element={<AboutMe />} />
+                <Route path='/docencia' element={<Docencia />} />
+                <Route path='/experiencia' element={<Experiencia />} />
+                <Route path='/formacion' element={<Formacion />} />
+                <Route path='/habilidades' element={<Habilidades />} />
+                <Route path='/*' element={<AboutMe />} />
+              </Routes>
+            </div>
           </div>
-          <div className='contenedorDEFH'>
-          <Routes>
-            <Route path='/' element={<AboutMe/>}/>
-            <Route path='/sobremi' element={<AboutMe/>}/>
-            <Route path='/docencia' element={<Docencia />} />
-            <Route path='/experiencia' element={<Experiencia />} />
-            <Route path='/formacion' element={<Formacion />} />
-            <Route path='/habilidades' element={<Habilidades />} />
-            <Route path='/*' element={<AboutMe/>}/>
-          </Routes>
-          </div>
+
         </div>
       </BrowserRouter>
     </>

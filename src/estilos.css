@@ -59,8 +59,7 @@ body {
     top: 5%;
     left: 5%;
     border-radius: 1%;
-    padding-bottom: 20px;
-
+    
     /*posición contenido*/
     display: flex;
     flex-direction: column;
@@ -68,7 +67,7 @@ body {
     align-items: center;
 
     /*decoración contenido*/
-    background-color: #323232;
+    background: linear-gradient(180deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
 }
 
 /*INFORMACIÓN DE PERFIL*/
@@ -83,9 +82,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(50, 50, 50);
-    background: linear-gradient(360deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
-}
+    }
 
 .contenedorHeader {
     display: flex;
@@ -211,18 +208,19 @@ body {
     padding-top: 5px;
     max-height: 250px;
     overflow-y: auto;
+    border-radius: 1%;
 }
 
 .biografia {
     width: 95%;
 }
 
-.biografia .card-text {
+.biografia .textoBiografia {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 }
 
-.biografia .card-text a {
+.biografia .textoBiografia a {
     text-decoration: none;
     font-weight: 800;
     color: #e40434;
@@ -235,7 +233,7 @@ body {
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    padding-top: 10px;
+    
 }
 
 .datosPerfil p {
@@ -289,16 +287,18 @@ body {
     padding-top: 5px;
     max-height: 250px;
     overflow-y: auto;
+    border-radius: 1%;
+
 }
 
-.contenidoFormacion .card-title {
+.contenidoFormacion .titleFormacion {
     font-family: 'bebas neue', sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
     padding-bottom: 5px;
 }
 
-.contenidoFormacion .card-title span {
+.contenidoFormacion .titleFormacion span {
     background-color: #ff9800;
     padding: 5px;
     border-radius: 5px;
@@ -338,17 +338,18 @@ body {
     background-color: #EEE5E9;
     max-height: 250px;
     overflow-y: auto;
-    padding-top: 5px;
+    border-radius: 1%;
+        padding: 10px;
 }
 
-.contenidoDocencia .card-title {
+.contenidoDocencia .titleDocencia {
     font-family: 'bebas neue', sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
     padding-bottom: 10px;
 }
 
-.contenidoDocencia .card-title span {
+.contenidoDocencia .titleDocencia span {
     background-color: #ff9800;
     padding: 5px;
     border-radius: 5px;
@@ -376,7 +377,7 @@ body {
     justify-content: space-evenly;
 }
 
-.contenedorExperiencia .card-header {
+.contenedorExperiencia .headerExperiencia {
     color: #ff9800;
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
@@ -395,7 +396,10 @@ body {
     background-color: #EEE5E9;
     max-height: 250px;
     overflow-y: auto;
+    border-radius: 1%;
+    padding: 10px;
 }
+
 
 .contenidoExperiencia ul {
     padding-left: 0;
@@ -439,7 +443,7 @@ body {
 
 }
 
-.contenedorHabilidades .card-header {
+.contenedorHabilidades .encabezadoHabilidades {
     color: #ff9800;
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
@@ -461,6 +465,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 1%;
 }
 
 .contenedorHabilidades .contenidoSkills .skills {
@@ -605,12 +610,12 @@ body {
 
     /* FORMACIÓN */
 
-    .contenedorFormacion .card-header {
+    .contenedorFormacion .encabezadoFormacion {
         padding-bottom: 10px;
 
     }
 
-    .contenidoFormacion .card-title {
+    .contenidoFormacion .titleFormacion {
         font-size: 25px;
     }
 
@@ -635,7 +640,7 @@ body {
 
     /* EXPERIENCIA */
 
-    .contenedorExperiencia .card-header {
+    .contenedorExperiencia .headerExperiencia {
         padding-bottom: 10px;
     }
 
@@ -649,7 +654,7 @@ body {
     }
 
     /* HABILIDADES SKILLS */
-    .contenedorHabilidades .card-header {
+    .contenedorHabilidades .encabezadoHabilidades {
         padding-bottom: 10px;
     }
 
@@ -726,7 +731,7 @@ body {
     }
 
     .contenidoSobreMi {
-        max-height: 400px;
+        height: 400px;
     }
 
     .biografia {
@@ -750,36 +755,36 @@ body {
 
     /* FORMACIÓN */
 
-    .contenedorFormacion .card-header {
+    .contenedorFormacion .encabezadoFormacion {
         font-size: 30px;
     }
 
     .contenidoFormacion {
-        max-height: 400px;
+        height: 400px;
     }
 
     /* DOCENCIA */
-    .contenedorDocencia .card.card-header {
+    .contenedorDocencia .encabezadoDocencia {
         font-size: 30px;
     }
 
     .contenidoDocencia {
-        max-height: 400px;
+        height: 400px;
     }
 
     /* EXPERIENCIA */
 
-    .contenedorExperiencia .card-header {
+    .contenedorExperiencia .encabezadoExperiencia {
         font-size: 30px;
     }
 
     .contenidoExperiencia {
-        max-height: 400px;
+        height: 400px;
     }
 
     /* SKILLS */
 
-    .contenedorHabilidades .card-header {
+    .contenedorHabilidades .encabezadoHabilidades {
         font-size: 30px;
     }
 
@@ -826,27 +831,36 @@ body {
         display: none;
     }
 
+    .tooltip {
+        color: white;
+    }
+
+    .contenedor-general {
+
+        /* Posición general del contenedor del CV */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+    }
 
     /* CONTENEDOR PRINCIPAL */
     .contenedorCV {
-        /*posición y forma del contenedor*/
-        width: 90%;
-        height: 90vh;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        /*Forma del contenedor*/
         border-radius: 1%;
-
-        /*posición contenido*/
+        height: 90vh;
+        
+        /*posición contenido del CV*/
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
+        
 
         /*decoración contenido*/
-        background-color: #323232;
+        background: linear-gradient(270deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
     }
 
     /*INFORMACIÓN DE PERFIL*/
@@ -861,7 +875,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(270deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
+        
     }
 
     .contenedorHeader {
@@ -914,7 +928,7 @@ body {
     }
 
     .contenedorFooter svg:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
         transition: 0.2s;
     }
 
@@ -944,17 +958,18 @@ body {
 
     .contenedorDEFH {
         width: 55%;
-        height: 80%;
+        height: 90vh;
 
     }
 
     /* CONTENEDOR ABOUT ME */
     .contenedorSobreMi {
+
         /*Dimensiones del contenedor*/
-        height: 100%;
+        height: 90vh;
     }
 
-    .contenedorSobreMi .card-header {
+    .contenedorSobreMi .encabezadoSobreMi {
         color: #ff9800;
         font-family: 'Roboto Slab', serif;
         font-weight: 700;
@@ -965,31 +980,48 @@ body {
         justify-content: center;
         transition: all 0.4s;
         animation: fadeInAndMoveUp 2s forwards;
-        opacity: 0;
+
         /* Definimos la opacidad inicial en 0 para que la caja esté oculta al principio */
+        opacity: 0;
     }
 
     .contenidoSobreMi {
-        justify-content: center;
+        justify-content: start;
         max-height: 400px;
+        
     }
 
     .biografia {
         width: 95%;
+        padding: 10px;
+    }
+
+    .textoBiografia {
+        font-size: 16px;
+    }
+
+    .textoBiografia a {
+        color:#e40434;
+        text-decoration: none;
+        font-weight: 700;
+        letter-spacing: 1px;
     }
 
     .datosPerfil {
         /*Dimensiones del contenedor*/
         width: 80%;
+        font-size: 15px;
     }
+    
 
     /* FORMACIÓN */
     .contenedorFormacion {
         /* Dimensiones del contenedor */
-        height: 100%;
+        height: 90vh;
+        
     }
 
-    .contenedorFormacion .card-header {
+    .contenedorFormacion .encabezadoFormacion {
         color: #ff9800;
         font-family: 'Roboto Slab', serif;
         font-weight: 700;
@@ -1006,15 +1038,19 @@ body {
     .contenidoFormacion {
 
         max-height: 400px;
+        border-radius: 1%;
     }
 
+    .formacion {
+        padding: 10px;
+    }
     /* DOCENCIA */
     .contenedorDocencia {
         /* Dimensiones del contenedor */
         height: 100%;
     }
 
-    .contenedorDocencia .card-header {
+    .contenedorDocencia .encabezadoDocencia {
         color: #ff9800;
         font-family: 'Roboto Slab', serif;
         font-weight: 700;
@@ -1031,6 +1067,7 @@ body {
 
     .contenidoDocencia {
         max-height: 400px;
+        
     }
 
     /* EXPERIENCIA */
@@ -1040,7 +1077,7 @@ body {
         height: 100%;
     }
 
-    .contenedorExperiencia .card-header {
+    .contenedorExperiencia .headerExperiencia {
         color: #ff9800;
         font-family: 'Roboto Slab', serif;
         font-weight: 700;
@@ -1072,7 +1109,7 @@ body {
         height: 100%;
     }
 
-    .contenedorHabilidades .card-header {
+    .contenedorHabilidades .encabezadoHabilidades {
         color: #ff9800;
         font-family: 'Roboto Slab', serif;
         font-weight: 700;
@@ -1088,7 +1125,7 @@ body {
 
     .contenedorHabilidades .contenidoSkills {
         height: auto;
-        max-height: 400px;
+        height: 400px;
     }
 
     .contenedorHabilidades .contenidoSkills .listSkills {

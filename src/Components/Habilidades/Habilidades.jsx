@@ -21,66 +21,64 @@ export const Habilidades = () => {
         <>
 
             <div className="contenedorHabilidades">
-                <div className="card-header text-center display-6">
+                <div className="encabezadoHabilidades">
                     HABILIDADES
                 </div>
-                <div className="card">
-                    <div className="contenidoSkills">
-                        <div className="skills">
-                            <div>
-                                <ul className="listSkills">
-                                    <li className="skillItem">
-                                        <FontAwesomeIcon icon={faPencil} />
-                                        <div className="skillText">Redacción</div>
-                                        <div className="skillLevel">
-                                            <LoadingBarRedaccion />
-                                        </div>
-                                    </li>
-                                    <li className="skillItem">
-                                        <FontAwesomeIcon icon={faGlasses} />
-                                        <div className="skillText">Edición</div>
-                                        <div className="skillLevel">
-                                            <LoadingBarEdicion />
-                                        </div>
-                                    </li>
-                                    <li className="skillItem">
+                <div className="contenidoSkills">
+                    <div className="skills">
+                        <div>
+                            <ul className="listSkills">
+                                <li className="skillItem">
+                                    <FontAwesomeIcon icon={faPencil} />
+                                    <div className="skillText">Redacción</div>
+                                    <div className="skillLevel">
+                                        <LoadingBarRedaccion />
+                                    </div>
+                                </li>
+                                <li className="skillItem">
+                                    <FontAwesomeIcon icon={faGlasses} />
+                                    <div className="skillText">Edición</div>
+                                    <div className="skillLevel">
+                                        <LoadingBarEdicion />
+                                    </div>
+                                </li>
+                                <li className="skillItem">
                                     <FontAwesomeIcon icon={faLanguage} />
-                                        <div className="skillText">Inglés</div>
-                                        <div className="skillLevel">
-                                        <LoadingBarLanguage/>
-                                        </div>
-                                    </li>
-                                    <li className="skillItem">
-                                        <FontAwesomeIcon icon={faHtml5} />
-                                        <div className="skillText">HTML5</div>
-                                        <div className="skillLevel">
-                                            <LoadingBarHtml/>
-                                        </div>
-                                    </li>
-                                    <li className="skillItem">
-                                        <FontAwesomeIcon icon={faCss3Alt} />
-                                        <div className="skillText">CSS3</div>
-                                        <div className="skillLevel">
-                                            <LoadingBarCss/>
-                                        </div>
-                                    </li>
-                                    <li className="skillItem">
-                                        <FontAwesomeIcon icon={faSquareJs} />
-                                        <div className="skillText">Javascript</div>
-                                        <div className="skillLevel">
-                                            <LoadingBarJavascript/>
-                                        </div>
-                                    </li>
-                                    <li className="skillItem">
-                                        <FontAwesomeIcon icon={faReact} />
-                                        <div className="skillText">ReactJS</div>
-                                        <div className="skillLevel">
-                                            <LoadingBarReact/>
-                                        </div>
-                                    </li>
+                                    <div className="skillText">Inglés</div>
+                                    <div className="skillLevel">
+                                        <LoadingBarLanguage />
+                                    </div>
+                                </li>
+                                <li className="skillItem">
+                                    <FontAwesomeIcon icon={faHtml5} />
+                                    <div className="skillText">HTML5</div>
+                                    <div className="skillLevel">
+                                        <LoadingBarHtml />
+                                    </div>
+                                </li>
+                                <li className="skillItem">
+                                    <FontAwesomeIcon icon={faCss3Alt} />
+                                    <div className="skillText">CSS3</div>
+                                    <div className="skillLevel">
+                                        <LoadingBarCss />
+                                    </div>
+                                </li>
+                                <li className="skillItem">
+                                    <FontAwesomeIcon icon={faSquareJs} />
+                                    <div className="skillText">Javascript</div>
+                                    <div className="skillLevel">
+                                        <LoadingBarJavascript />
+                                    </div>
+                                </li>
+                                <li className="skillItem">
+                                    <FontAwesomeIcon icon={faReact} />
+                                    <div className="skillText">ReactJS</div>
+                                    <div className="skillLevel">
+                                        <LoadingBarReact />
+                                    </div>
+                                </li>
 
-                                </ul>
-                            </div>
+                            </ul>
                         </div>
                     </div>
                 </div>

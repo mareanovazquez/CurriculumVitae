@@ -3,15 +3,13 @@ export const Docencia = () => {
     return (
         <>
             <div className="contenedorDocencia">
-                <div className="card-header text-center display-6">
+                <div className="encabezadoDocencia">
                     DOCENCIA
                 </div>
-                <div className="card">
-                    <div className="contenidoDocencia">
-                        <div className="card-body ">
-                            <div className="card-text docencia">
+                <div className="contenidoDocencia">
+                            <div className="docencia">
                                 <ul>
-                                    <li className=" h5 card-title"> <span>
+                                    <li className=" titleDocencia"> <span>
                                         UNIVERSIDAD NACIONAL DE LA PLATA</span></li>
                                     <li className="h6"> <span>
                                         FACULTAD DE PERIODISMO Y COMUNICACIÓN SOCIAL</span></li>
@@ -22,11 +20,9 @@ export const Docencia = () => {
                                     <li>Seminario de posgrado "Vivir en las redes" <small>2019 - presente</small></li>
                                 </ul>
                             </div>
-                        </div>
-                        <div className="card-body ">
-                            <div className="card-text docencia">
+                            <div className="docencia">
                                 <ul>
-                                    <li className="h5 card-title">
+                                    <li className="titleDocencia">
                                         <span>INSTITUTO SUPERIOR EN REGISTRACIÓN Y PUBLICIDAD INMOBILIARIA</span></li>
                                         <li className="h6"> <span>
                                         TECNICATURA EN REGISTRACIÓN Y PUBLICIDAD INMOBILIARIA</span></li>
@@ -34,20 +30,17 @@ export const Docencia = () => {
                                     <li>Revista registral <small>2018-2022</small></li>
                                 </ul>
                             </div>
-                        </div>
-                        <div className="card-body ">
-                            <div className="card-text docencia">
+                            <div className="docencia">
                                 <ul>
-                                    <li className="h5 card-title">
+                                    <li className="titleDocencia">
                                         <span>UNIVERSIDAD DEL ESTE</span></li>
                                     <li className="h6"> <span>
                                         FACULTAD DE DERECHO Y CIENCIAS SOCIALES</span></li>
                                     <li>Principios de redacción <small>2019-2022</small></li>
                                 </ul>
                             </div>
-                        </div>
+                        
                     </div>
-                </div>
                 <div className="dividerCard"> <div className="dividerBar"></div> </div>
             </div>
         </>

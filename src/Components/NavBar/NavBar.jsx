@@ -31,11 +31,13 @@ export function NavBar() {
         <div className="MenuNavBar" >
 
             <NavLink className='opcionesNavBar' to='/sobremi'>
-                <button className={`my-button ${activeButton === 1 ? 'btn btn-secondary' : 'btn btn-outline-secondary'}`}
+                <button
+                    id="button-1"
+                    className={`my-button ${activeButton === 1 ? 'btn btn-secondary' : 'btn btn-outline-secondary'}`}
                     onClick={() => toggleActive(1)}>
                     <FontAwesomeIcon icon={faGlasses} />
-                    <br></br>
-                    <small>SOBRE MI</small>
+                    <br />
+                    <small>Sobre Mí</small>
                 </button>
             </NavLink>
 

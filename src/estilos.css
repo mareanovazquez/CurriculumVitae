@@ -51,13 +51,18 @@ body {
 }
 
 /* CONTENEDOR PRINCIPAL */
+.contenedor-general {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .contenedorCV {
     /*posición y forma del contenedor*/
     width: 90%;
     height: 80vh;
-    position: absolute;
-    top: 5%;
-    left: 5%;
     border-radius: 1%;
 
     /*posición contenido*/
@@ -65,7 +70,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    
     /*decoración contenido*/
     background: linear-gradient(180deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
 }
@@ -167,8 +172,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
 }
 
 /* CONTENEDOR ABOUT ME */
@@ -206,6 +209,7 @@ body {
     align-items: center;
     background-color: #EEE5E9;
     padding-top: 5px;
+    padding-bottom: 10px;
     max-height: 250px;
     overflow-y: auto;
     border-radius: 1%;
@@ -213,11 +217,13 @@ body {
 
 .biografia {
     width: 95%;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .biografia .textoBiografia {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .biografia .textoBiografia a {
@@ -240,7 +246,7 @@ body {
     border-bottom: 2px;
     border-bottom-color: #ff9800;
     border-bottom-style: solid;
-    padding-right: 10px;
+    
 
     /*disposición del contenido*/
     display: flex;
@@ -254,7 +260,7 @@ body {
     color: #EEE5E9;
     font-weight: 900;
     padding: 3px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 /* FORMACIÓN */
@@ -295,6 +301,7 @@ body {
     font-family: 'bebas neue', sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
+    padding-top: 10px;
     padding-bottom: 5px;
 }
 
@@ -339,7 +346,8 @@ body {
     max-height: 250px;
     overflow-y: auto;
     border-radius: 1%;
-    padding: 10px;
+    padding-top: 10px;
+    
 }
 
 .contenidoDocencia .titleDocencia {
@@ -397,7 +405,8 @@ body {
     max-height: 250px;
     overflow-y: auto;
     border-radius: 1%;
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 
@@ -409,7 +418,7 @@ body {
     list-style: none;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .contenidoExperiencia ul li small {
@@ -597,11 +606,11 @@ body {
     }
 
     .biografia .textoBiografia{
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .datosPerfil {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .datosPerfil p span {
@@ -620,7 +629,7 @@ body {
     }
 
     .contenidoFormacion ul li {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     /* DOCENCIA */
@@ -635,7 +644,7 @@ body {
     }
 
     .contenidoDocencia ul li {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     /* EXPERIENCIA */
@@ -646,11 +655,11 @@ body {
 
 
     .contenidoExperiencia ul .itemExp {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .contenidoExperiencia ul .subItemExp {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     /* HABILIDADES SKILLS */
@@ -663,7 +672,7 @@ body {
     }
 
     .contenedorHabilidades .contenidoSkills .listSkills {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .contenedorHabilidades .contenidoSkills .listSkills .skillItem {

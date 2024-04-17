@@ -224,6 +224,15 @@ body {
 .biografia .textoBiografia {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    padding-right: 10px;
+}
+
+.biografia .textoBiografia::first-letter {
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-style: 900;
+    font-size: 28px;
+    color: #ff9800;
 }
 
 .biografia .textoBiografia a {
@@ -294,7 +303,10 @@ body {
     max-height: 250px;
     overflow-y: auto;
     border-radius: 1%;
+}
 
+.contenidoFormacion .formacion {
+    padding-right: 10px;
 }
 
 .contenidoFormacion .titleFormacion {
@@ -355,6 +367,7 @@ body {
     font-size: 20px;
     letter-spacing: 1px;
     padding-bottom: 10px;
+    padding-right: 10px;
 }
 
 .contenidoDocencia .titleDocencia span {
@@ -406,7 +419,8 @@ body {
     overflow-y: auto;
     border-radius: 1%;
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
 
@@ -993,9 +1007,8 @@ body {
     }
 
     .contenidoSobreMi {
-        justify-content: center;
+        justify-content: flex-start;
         max-height: 400px;
-
     }
 
     .biografia {
@@ -1244,6 +1257,11 @@ body {
     .contenedorCV {
         /*posición y forma del contenedor*/
         width: 90%;
+    }
+
+    .contenidoSobreMi {
+        justify-content: center;
+        max-height: 400px;
     }
 
 

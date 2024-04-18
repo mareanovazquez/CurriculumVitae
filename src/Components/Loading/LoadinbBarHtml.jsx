@@ -23,7 +23,7 @@ export const LoadingBarHtml = () => {
     return (
         <>
             <div className="levelHtml" style={{ width: `${percentageHtml}%` }}></div>
-            <div className="percentageHtml">{percentageHtml}%</div>
+            <div className="percentageHtml d-none">{percentageHtml}%</div>
         </>
     )
 

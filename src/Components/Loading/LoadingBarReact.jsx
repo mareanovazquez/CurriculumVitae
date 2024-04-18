@@ -23,7 +23,7 @@ export const LoadingBarReact = () => {
     return (
         <>
             <div className="levelReact" style={{ width: `${percentageReact}%` }}></div>
-            <div className="percentageReact">{percentageReact}%</div>
+            <div className="percentageReact d-none">{percentageReact}%</div>
         </>
     )
 

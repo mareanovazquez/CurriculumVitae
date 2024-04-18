@@ -29,49 +29,49 @@ export const Habilidades = () => {
                         <div>
                             <ul className="listSkills">
                                 <li className="skillItem">
-                                    <FontAwesomeIcon icon={faPencil} />
+                                    <FontAwesomeIcon icon={faPencil} size="2x"/>
                                     <div className="skillText">Redacción</div>
                                     <div className="skillLevel">
                                         <LoadingBarRedaccion />
                                     </div>
                                 </li>
                                 <li className="skillItem">
-                                    <FontAwesomeIcon icon={faGlasses} />
+                                    <FontAwesomeIcon icon={faGlasses} size="2x" />
                                     <div className="skillText">Edición</div>
                                     <div className="skillLevel">
                                         <LoadingBarEdicion />
                                     </div>
                                 </li>
                                 <li className="skillItem">
-                                    <FontAwesomeIcon icon={faLanguage} />
+                                    <FontAwesomeIcon icon={faLanguage} size="2x" />
                                     <div className="skillText">Inglés</div>
                                     <div className="skillLevel">
                                         <LoadingBarLanguage />
                                     </div>
                                 </li>
                                 <li className="skillItem">
-                                    <FontAwesomeIcon icon={faHtml5} />
+                                    <FontAwesomeIcon icon={faHtml5} size="2x"/>
                                     <div className="skillText">HTML5</div>
                                     <div className="skillLevel">
                                         <LoadingBarHtml />
                                     </div>
                                 </li>
                                 <li className="skillItem">
-                                    <FontAwesomeIcon icon={faCss3Alt} />
+                                    <FontAwesomeIcon icon={faCss3Alt} size="2x"/>
                                     <div className="skillText">CSS3</div>
                                     <div className="skillLevel">
                                         <LoadingBarCss />
                                     </div>
                                 </li>
                                 <li className="skillItem">
-                                    <FontAwesomeIcon icon={faSquareJs} />
+                                    <FontAwesomeIcon icon={faSquareJs} size="2x"/>
                                     <div className="skillText">Javascript</div>
                                     <div className="skillLevel">
                                         <LoadingBarJavascript />
                                     </div>
                                 </li>
                                 <li className="skillItem">
-                                    <FontAwesomeIcon icon={faReact} />
+                                    <FontAwesomeIcon icon={faReact} size="2x"/>
                                     <div className="skillText">ReactJS</div>
                                     <div className="skillLevel">
                                         <LoadingBarReact />

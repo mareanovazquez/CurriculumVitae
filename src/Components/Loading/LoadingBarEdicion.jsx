@@ -21,7 +21,7 @@ export const LoadingBarEdicion = () => {
     return (
         <>
             <div className="levelEdicion" style={{ width: `${percentageEdicion}%` }}></div>
-            <div className="percentageEdicion">{percentageEdicion}%</div>
+            <div className="percentageEdicion d-none">{percentageEdicion}%</div>
         </>
     )
 }

@@ -23,7 +23,7 @@ export const LoadingBarRedaccion = () => {
     return (
         <>
             <div className="levelRedaccion" style={{ width: `${percentageRedaccion}%` }}></div>
-            <div className="percentageRedaccion">{percentageRedaccion}%</div>
+            <div className="percentageRedaccion d-none">{percentageRedaccion}%</div>
         </>
     )
 

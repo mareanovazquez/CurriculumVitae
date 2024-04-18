@@ -28,7 +28,7 @@ body {
     right: 0;
     z-index: 44444;
     padding: 10px;
-    
+
     /* Centrado horizontal */
     display: flex;
     justify-content: center;
@@ -59,6 +59,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .contenedorCV {
     /*posición y forma del contenedor*/
     width: 90%;
@@ -70,7 +71,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
+
     /*decoración contenido*/
     background: linear-gradient(180deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
 }
@@ -255,7 +256,7 @@ body {
     border-bottom: 2px;
     border-bottom-color: #ff9800;
     border-bottom-style: solid;
-    
+
 
     /*disposición del contenido*/
     display: flex;
@@ -282,7 +283,7 @@ body {
     justify-content: space-evenly;
 }
 
-.contenedorFormacion .encabezadoFormacion{
+.contenedorFormacion .encabezadoFormacion {
     color: #ff9800;
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
@@ -338,7 +339,7 @@ body {
     justify-content: space-evenly;
 }
 
-.contenedorDocencia .encabezadoDocencia{
+.contenedorDocencia .encabezadoDocencia {
     color: #ff9800;
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
@@ -359,7 +360,7 @@ body {
     overflow-y: auto;
     border-radius: 1%;
     padding-top: 10px;
-    
+
 }
 
 .contenidoDocencia .titleDocencia {
@@ -619,7 +620,7 @@ body {
         width: 95%;
     }
 
-    .biografia .textoBiografia{
+    .biografia .textoBiografia {
         font-size: 15px;
     }
 
@@ -648,12 +649,12 @@ body {
 
     /* DOCENCIA */
 
-    .contenedorDocencia .encabezadoDocencia{
+    .contenedorDocencia .encabezadoDocencia {
         padding-bottom: 10px;
     }
 
 
-    .contenidoDocencia .titleDocencia{
+    .contenidoDocencia .titleDocencia {
         font-size: 25px;
     }
 
@@ -681,6 +682,10 @@ body {
         padding-bottom: 10px;
     }
 
+    .contenedorHabilidades .contenidoSkills {
+        justify-content: flex-start;
+    }
+
     .contenedorHabilidades .contenidoSkills .skills {
         padding-top: 15px;
     }
@@ -694,8 +699,8 @@ body {
     }
 
     .contenedorHabilidades .contenidoSkills .listSkills li .skillText {
-        padding-left: 0px;
-        font-size: 17px;
+        padding-left: 5px;
+        font-size: 15px;
     }
 
     .percentageRedaccion,
@@ -749,12 +754,12 @@ body {
 
     /* CONTENEDOR ABOUT ME */
 
-    .contenedorSobreMi .encabezadoSobreMi{
+    .contenedorSobreMi .encabezadoSobreMi {
         font-size: 30px;
     }
 
     .contenidoSobreMi {
-        height: 400px;
+        max-height: 350px;
     }
 
     .biografia {
@@ -783,7 +788,7 @@ body {
     }
 
     .contenidoFormacion {
-        height: 400px;
+        max-height: 350px;
     }
 
     /* DOCENCIA */
@@ -792,7 +797,7 @@ body {
     }
 
     .contenidoDocencia {
-        height: 400px;
+        max-height: 350px;
     }
 
     /* EXPERIENCIA */
@@ -802,7 +807,7 @@ body {
     }
 
     .contenidoExperiencia {
-        height: 400px;
+        max-height: 350px;
     }
 
     /* SKILLS */
@@ -813,7 +818,7 @@ body {
 
     .contenedorHabilidades .contenidoSkills {
         height: auto;
-        max-height: 400px;
+        max-height: 350px;
     }
 }
 
@@ -961,7 +966,6 @@ body {
     .contenedorDescripcion {
         color: #ff9800;
         text-align: center;
-
     }
 
     .contenedorDescripcion h4 {
@@ -1060,7 +1064,7 @@ body {
         flex-direction: column;
         justify-content: center;
         max-height: 400px;
-        }
+    }
 
     .formacion {
         padding: 10px;
@@ -1151,8 +1155,8 @@ body {
     }
 
     .contenedorHabilidades .contenidoSkills {
-        height: auto;
-        height: 400px;
+        max-height: 400px;
+        justify-content: flex-start;
     }
 
     .contenedorHabilidades .contenidoSkills .listSkills {

@@ -23,7 +23,7 @@ export const LoadingBarJavascript = () => {
     return (
         <>
             <div className="levelCss" style={{ width: `${percentageCss}%` }}></div>
-            <div className="percentageCss">{percentageCss}%</div>
+            <div className="percentageCss d-none">{percentageCss}%</div>
         </>
     )
 

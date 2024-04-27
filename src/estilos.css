@@ -228,12 +228,25 @@ body {
     padding-right: 10px;
 }
 
-.biografia .textoBiografia::first-letter {
+.biografia .primerParrafo::first-letter {
     text-transform: uppercase;
     font-family: 'Roboto Slab', serif;
     font-style: 900;
     font-size: 28px;
     color: #ff9800;
+}
+
+.biografia .segundoParrafo ul {
+    border-left-width: 8px;
+    border-left-color: #ff9800;
+    border-left-style: solid;
+    padding-left: 1 rem;
+}
+
+.biografia .textoBiografia ul li {
+    list-style: none;
+    font-weight: 600;
+    font-size: 13px;
 }
 
 .biografia .textoBiografia a {
@@ -245,7 +258,7 @@ body {
 
 .datosPerfil {
     /*Dimensiones del contenedor*/
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -773,7 +786,7 @@ body {
 
     .datosPerfil {
         /*Dimensiones del contenedor*/
-        width: 60%;
+        width: 75%;
         font-size: 16px;
     }
 
@@ -1031,9 +1044,13 @@ body {
         letter-spacing: 1px;
     }
 
+    .biografia .textoBiografia ul li {
+       font-size: 14px;
+    }
+
     .datosPerfil {
         /*Dimensiones del contenedor*/
-        width: 80%;
+        width:90%;
         font-size: 15px;
     }
 
@@ -1264,7 +1281,7 @@ body {
     }
 
     .contenidoSobreMi {
-        justify-content: center;
+        justify-content: flex-start;
         max-height: 400px;
     }
 

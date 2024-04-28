@@ -6,13 +6,16 @@ import { faCss3Alt } from "@fortawesome/free-brands-svg-icons";
 import { faSquareJs } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from '@fortawesome/free-brands-svg-icons'
 import { faLanguage } from "@fortawesome/free-solid-svg-icons";
+import { faFigma } from "@fortawesome/free-brands-svg-icons";
 import { LoadingBarEdicion } from "../Loading/LoadingBarEdicion";
+
 import { LoadingBarRedaccion } from "../Loading/LoadingBarRedaccion";
 import { LoadingBarHtml } from "../Loading/LoadinbBarHtml";
 import { LoadingBarCss } from "../Loading/LoadingBarCss";
 import { LoadingBarJavascript } from "../Loading/LoadingBarJavascript";
 import { LoadingBarReact } from "../Loading/LoadingBarReact";
 import { LoadingBarLanguage } from "../Loading/LoadingBarLanguage";
+import { LoadingBarFigma } from "../Loading/LoadingBarFigma";
 
 
 export const Habilidades = () => {
@@ -76,6 +79,13 @@ export const Habilidades = () => {
                                     <div className="skillLevel">
                                         <LoadingBarReact />
                                     </div>
+                                </li>
+                                <li className="skillItem">
+                                <FontAwesomeIcon icon={faFigma} size="2x" />
+                                <div className="skillText">Figma</div>
+                                <div className="skillLevel">
+                                    <LoadingBarFigma/>
+                                </div>
                                 </li>
 
                             </ul>

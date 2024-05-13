@@ -76,6 +76,14 @@ body {
     background: linear-gradient(180deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
 }
 
+/* TOGGLE LANGUAGE */
+.toggle-language {
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    z-index: 9999;
+}
+
 /*INFORMACIÓN DE PERFIL*/
 
 .contenedorHeaderyFooter {
@@ -617,6 +625,12 @@ body {
 /* Bootstrap breakpoints SM y superiores */
 @media (min-width: 576px) {
 
+    /* TOGGLE LANGUAGE */
+    .toggle-language {
+        top: 5%;
+        left: 85%;
+    }
+
     /* HEADER Y FOOTER */
     .contenedorNombre h2 {
         font-size: 30px;
@@ -733,6 +747,11 @@ body {
 /* Bootstrap breakpoints MD y superiores */
 @media (min-width: 768px) {
 
+    .toggle-language {
+        top: 5%;
+        left: 88%;
+    }
+
     /* CONTENEDOR PRINCIPAL */
     .contenedorHeaderyFooter {
         /*posicionamiento contenido*/
@@ -840,6 +859,10 @@ body {
 /* Bootstrap breakpoints LG y superiores */
 @media (min-width: 992px) {
 
+    .toggle-language {
+        top: 7%;
+        left: 91%;
+    } 
     /*BARRA DE NAVEGACIÓN*/
     .MenuNavBar {
         /*posicionamiento contenedor*/
@@ -1045,12 +1068,12 @@ body {
     }
 
     .biografia .textoBiografia ul li {
-       font-size: 14px;
+        font-size: 14px;
     }
 
     .datosPerfil {
         /*Dimensiones del contenedor*/
-        width:90%;
+        width: 90%;
         font-size: 15px;
     }
 

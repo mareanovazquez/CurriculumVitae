@@ -18,15 +18,21 @@ import { LoadingBarLanguage } from "../Loading/LoadingBarLanguage";
 import { LoadingBarFigma } from "../Loading/LoadingBarFigma";
 
 
-export const Habilidades = () => {
+export const Habilidades = ({language}) => {
 
     return (
         <>
 
             <div className="contenedorHabilidades">
+                {language === 'es'?
                 <div className="encabezadoHabilidades">
                     HABILIDADES
                 </div>
+                :
+                <div className="encabezadoHabilidades">
+                SKILLS
+            </div>
+    }
                 <div className="contenidoSkills">
                     <div className="skills">
                         <div>

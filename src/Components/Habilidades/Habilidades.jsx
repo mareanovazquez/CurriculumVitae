@@ -18,80 +18,76 @@ import { LoadingBarLanguage } from "../Loading/LoadingBarLanguage";
 import { LoadingBarFigma } from "../Loading/LoadingBarFigma";
 
 
-export const Habilidades = ({language}) => {
+export const Habilidades = ({ language }) => {
 
     return (
         <>
-
+{language === 'es' ?
             <div className="contenedorHabilidades">
-                {language === 'es'?
-                <div className="encabezadoHabilidades">
-                    HABILIDADES
-                </div>
-                :
-                <div className="encabezadoHabilidades">
-                SKILLS
-            </div>
-    }
+                
+                    <div className="encabezadoHabilidades">
+                        HABILIDADES
+                    </div>
+                
                 <div className="contenidoSkills">
                     <div className="skills">
                         <div>
                             <ul className="listSkills">
                                 <li className="skillItem">
-                                    <FontAwesomeIcon icon={faPencil} size="2x"/>
+                                    <FontAwesomeIcon icon={faPencil} className="figma-icon" />
                                     <div className="skillText">Redacción</div>
                                     <div className="skillLevel">
                                         <LoadingBarRedaccion />
                                     </div>
                                 </li>
                                 <li className="skillItem">
-                                    <FontAwesomeIcon icon={faGlasses} size="2x" />
+                                    <FontAwesomeIcon icon={faGlasses} className="figma-icon" />
                                     <div className="skillText">Edición</div>
                                     <div className="skillLevel">
                                         <LoadingBarEdicion />
                                     </div>
                                 </li>
                                 <li className="skillItem">
-                                    <FontAwesomeIcon icon={faLanguage} size="2x" />
+                                    <FontAwesomeIcon icon={faLanguage} className="figma-icon" />
                                     <div className="skillText">Inglés</div>
                                     <div className="skillLevel">
                                         <LoadingBarLanguage />
                                     </div>
                                 </li>
                                 <li className="skillItem">
-                                    <FontAwesomeIcon icon={faHtml5} size="2x"/>
+                                    <FontAwesomeIcon icon={faHtml5} className="figma-icon" />
                                     <div className="skillText">HTML5</div>
                                     <div className="skillLevel">
                                         <LoadingBarHtml />
                                     </div>
                                 </li>
                                 <li className="skillItem">
-                                    <FontAwesomeIcon icon={faCss3Alt} size="2x"/>
+                                    <FontAwesomeIcon icon={faCss3Alt} className="figma-icon" />
                                     <div className="skillText">CSS3</div>
                                     <div className="skillLevel">
                                         <LoadingBarCss />
                                     </div>
                                 </li>
                                 <li className="skillItem">
-                                    <FontAwesomeIcon icon={faSquareJs} size="2x"/>
+                                    <FontAwesomeIcon icon={faSquareJs} className="figma-icon" />
                                     <div className="skillText">Javascript</div>
                                     <div className="skillLevel">
                                         <LoadingBarJavascript />
                                     </div>
                                 </li>
                                 <li className="skillItem">
-                                    <FontAwesomeIcon icon={faReact} size="2x"/>
+                                    <FontAwesomeIcon icon={faReact} className="figma-icon" />
                                     <div className="skillText">ReactJS</div>
                                     <div className="skillLevel">
                                         <LoadingBarReact />
                                     </div>
                                 </li>
                                 <li className="skillItem">
-                                <FontAwesomeIcon icon={faFigma} size="2x" />
-                                <div className="skillText">Figma</div>
-                                <div className="skillLevel">
-                                    <LoadingBarFigma/>
-                                </div>
+                                    <FontAwesomeIcon icon={faFigma} size="3x" className="figma-icon"/>
+                                    <div className="skillText">Figma</div>
+                                    <div className="skillLevel">
+                                        <LoadingBarFigma />
+                                    </div>
                                 </li>
 
                             </ul>
@@ -100,6 +96,81 @@ export const Habilidades = ({language}) => {
                 </div>
                 <div className="dividerCard"> <div className="dividerBar"></div> </div>
             </div>
+            :
+            <div className="contenedorHabilidades">
+                
+                    <div className="encabezadoHabilidades">
+                        SKILLS
+                    </div>
+                
+                <div className="contenidoSkills">
+                    <div className="skills">
+                        <div>
+                            <ul className="listSkills">
+                                <li className="skillItem">
+                                    <FontAwesomeIcon icon={faPencil} className="figma-icon" />
+                                    <div className="skillText">Writing</div>
+                                    <div className="skillLevel">
+                                        <LoadingBarRedaccion />
+                                    </div>
+                                </li>
+                                <li className="skillItem">
+                                    <FontAwesomeIcon icon={faGlasses} className="figma-icon" />
+                                    <div className="skillText">Text editing</div>
+                                    <div className="skillLevel">
+                                        <LoadingBarEdicion />
+                                    </div>
+                                </li>
+                                <li className="skillItem">
+                                    <FontAwesomeIcon icon={faLanguage} className="figma-icon" />
+                                    <div className="skillText">English</div>
+                                    <div className="skillLevel">
+                                        <LoadingBarLanguage />
+                                    </div>
+                                </li>
+                                <li className="skillItem">
+                                    <FontAwesomeIcon icon={faHtml5} className="figma-icon" />
+                                    <div className="skillText">HTML5</div>
+                                    <div className="skillLevel">
+                                        <LoadingBarHtml />
+                                    </div>
+                                </li>
+                                <li className="skillItem">
+                                    <FontAwesomeIcon icon={faCss3Alt} className="figma-icon" />
+                                    <div className="skillText">CSS3</div>
+                                    <div className="skillLevel">
+                                        <LoadingBarCss />
+                                    </div>
+                                </li>
+                                <li className="skillItem">
+                                    <FontAwesomeIcon icon={faSquareJs} className="figma-icon" />
+                                    <div className="skillText">Javascript</div>
+                                    <div className="skillLevel">
+                                        <LoadingBarJavascript />
+                                    </div>
+                                </li>
+                                <li className="skillItem">
+                                    <FontAwesomeIcon icon={faReact} className="figma-icon" />
+                                    <div className="skillText">ReactJS</div>
+                                    <div className="skillLevel">
+                                        <LoadingBarReact />
+                                    </div>
+                                </li>
+                                <li className="skillItem">
+                                    <FontAwesomeIcon icon={faFigma} size="3x" className="figma-icon"/>
+                                    <div className="skillText">Figma</div>
+                                    <div className="skillLevel">
+                                        <LoadingBarFigma />
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className="dividerCard"> <div className="dividerBar"></div> </div>
+            </div>
+}
         </>
     )
 }

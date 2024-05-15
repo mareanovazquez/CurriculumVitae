@@ -12,7 +12,7 @@ export const Formacion = ({ language }) => {
                             <ul>
                                 <li className="titleFormacion"> <span>
                                     PERIODISMO</span></li>
-                                <li>Licenciatura en social con orientación en periodismo. Facultad de Periodismo y Comunicación Social (UNLP)</li>
+                                <li>Licenciatura en comunicación social con orientación en periodismo. Facultad de Periodismo y Comunicación Social (UNLP)</li>
                                 <li>Doctorado en comunicación social. Facultad de Periodismo y Comunicación Social (UNLP)</li>
                             </ul>
                         </div>
@@ -38,8 +38,7 @@ export const Formacion = ({ language }) => {
                         <div className="formacion">
                             <ul>
                                 <li className="titleFormacion"><span>JOURNALISM</span></li>
-                                <li>Bachelor's Degree in Social Communication with an orientation in Journalism. Faculty of Journalism and Social Communication (UNLP)</li>
-                                <li>Ph.D. in Social Communication. Faculty of Journalism and Social Communication (UNLP)</li>
+                                <li>Bachelor's degree in Social Communication with an orientation in Journalism. Faculty of Journalism and Social Communication (UNLP)</li>                                <li>Ph.D. in Social Communication. Faculty of Journalism and Social Communication (UNLP)</li>
                             </ul>
                         </div>
                         <div className="formacion">

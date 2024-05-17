@@ -14,7 +14,10 @@ import { Habilidades } from './Components/Habilidades/Habilidades'
 import { Footer } from './Components/Footer/Footer'
 import { AboutMe } from './Components/AboutMe/AboutMe'
 import { ToggleLanguage } from './Components/ToggleLanguage/ToggleLanguage'
-
+import { ContenedorGeneral } from './Components/ContenedorGeneral/ContenedorGeneral'
+import { ContenedorCV } from './Components/ContenedorCV/ContenedorCV'
+import { ContenedorHeaderyFooter } from './Components/ContenedorHeaderyFooter/ContenedorHeaderyFooter'
+import { ContenedorDEFH } from './Components/ContenedorDEFH/ContenedorDEFH'
 
 function App() {
 
@@ -31,14 +34,13 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <ToggleLanguage toggleLang={toggleLang} language={language} />
-        <div className='contenedor-general'>
-          
-          <div className='contenedorCV'>
-            <div className='contenedorHeaderyFooter' >
+        <ContenedorGeneral>
+          <ContenedorCV>
+            <ContenedorHeaderyFooter>
               <Header />
               <Footer language={language} />
-            </div>
-            <div className='contenedorDEFH'>
+            </ContenedorHeaderyFooter>
+            <ContenedorDEFH>
               <Routes>
                 <Route path='/' element={<AboutMe language={language} />} />
                 <Route path='/sobremi' element={<AboutMe language={language} />} />
@@ -48,10 +50,9 @@ function App() {
                 <Route path='/habilidades' element={<Habilidades language={language} />} />
                 <Route path='/*' element={<AboutMe language={language} />} />
               </Routes>
-            </div>
-          </div>
-
-        </div>
+            </ContenedorDEFH>
+          </ContenedorCV>
+        </ContenedorGeneral>
       </BrowserRouter>
     </>
   )

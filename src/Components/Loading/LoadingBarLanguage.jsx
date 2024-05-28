@@ -22,7 +22,9 @@ export const LoadingBarLanguage = () => {
 
     return (
         <>
+        <div className="markLevel">
             <div className="levelLanguage" style={{ width: `${percentageLanguage}%` }}></div>
+        </div>
             <div className="percentageLanguage d-none">{percentageLanguage}%</div>
         </>
     )

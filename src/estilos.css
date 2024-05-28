@@ -19,6 +19,8 @@ body {
     background-color: #242424;
 }
 
+
+
 /*BARRA DE NAVEGACIÓN*/
 .MenuNavBar {
     /* Posicionamiento en la parte inferior de la pantalla */
@@ -552,6 +554,17 @@ body {
     height: 10px;
     position: relative;
 }
+.markLevel {
+    border-color: #323232;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    width: 90%;
+    height: 11px;
+    position: relative; /* Asegura que el contenido interno se posicione correctamente */
+    background-color: #f1f1f1; /* Un color de fondo para la barra vacía */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    }
 
 .levelRedaccion,
 .levelEdicion,
@@ -560,12 +573,14 @@ body {
 .levelCss,
 .levelJS,
 .levelReact {
-    position: absolute;
+    
     height: 10px;
     width: 0%;
     /* Se inicia en 0, pero React lo actualizará */
     background-color: #ff9800;
 }
+
+
 
 .percentageRedaccion,
 .percentageEdicion,

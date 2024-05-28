@@ -22,7 +22,9 @@ export const LoadingBarFigma = () => {
 
     return (
         <>
+        <div className="markLevel">
             <div className="levelReact" style={{ width: `${percentageReact}%` }}></div>
+        </div>
             <div className="percentageReact d-none">{percentageReact}%</div>
         </>
     )

@@ -35,7 +35,7 @@ export const Experiencia = ({ language }) => {
 
                             <li className="itemExp">CARTA ONLINE <small>2024</small></li>
                             <li className="subItemExp">
-                            Desarrollo de una aplicación web innovadora que simplifica la gestión de cartas y menús para bares, cafeterías y restaurantes. Los clientes podrán acceder fácilmente a carta mediante un código QR. Disponible en <a href="https:cartaonline.com.ar" target="blank">cartaonline.com.ar</a> </li>
+                            Desarrollo de una aplicación web innovadora que simplifica la gestión de cartas y menús para bares, cafeterías y restaurantes. Los clientes podrán acceder fácilmente a carta mediante un código QR. Disponible en <a href="https://cartaonline.com.ar" target="blank">cartaonline.com.ar</a> </li>
                         </ul>
                     </div>
                     <div className="dividerCard"> <div className="dividerBar"></div> </div>
@@ -68,7 +68,7 @@ export const Experiencia = ({ language }) => {
                                 the architecture firm Ratzkier and tourism agency <a href="https://epicaserviciosturisticos.com.ar" target="blank">Épica</a>.</li>
                                 <li className="itemExp">CARTA ONLINE <small>2024</small></li>
                             <li className="subItemExp">
-                            Development of an innovative web application that simplifies menu management for bars, cafes, and restaurants. Customers can easily access the menu through a QR code. Available at <a href="https:cartaonline.com.ar" target="blank">cartaonline.com.ar</a> </li>
+                            Development of an innovative web application that simplifies menu management for bars, cafes, and restaurants. Customers can easily access the menu through a QR code. Available at <a href="https://cartaonline.com.ar" target="blank">cartaonline.com.ar</a> </li>
                         </ul>
                     </div>
                     <div className="dividerCard"> <div className="dividerBar"></div> </div>

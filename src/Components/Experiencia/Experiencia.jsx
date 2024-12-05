@@ -32,6 +32,10 @@ export const Experiencia = ({ language }) => {
                             <li className="subItemExp">
                                 Consultor externo en gestión de la comunicación digital y desarrollo de los websites de <a href="https://estudiorec.com.ar" target="blank">Estudio REC</a>,
                                 el estudio de arquitectura <a href="https:ratzkierarquitectura.com.ar" target="blank">Ratzkier</a> y la agencia de turismo <a href="https://epicaserviciosturisticos.com.ar" target="blank">Épica</a>.</li>
+
+                            <li className="itemExp">CARTA ONLINE <small>2024</small></li>
+                            <li className="subItemExp">
+                            Desarrollo de una aplicación web innovadora que simplifica la gestión de cartas y menús para bares, cafeterías y restaurantes. Los clientes podrán acceder fácilmente a carta mediante un código QR. Disponible en <a href="https:cartaonline.com.ar" target="blank">cartaonline.com.ar</a> </li>
                         </ul>
                     </div>
                     <div className="dividerCard"> <div className="dividerBar"></div> </div>
@@ -60,8 +64,11 @@ export const Experiencia = ({ language }) => {
 
                             <li className="itemExp">ESTUDIO REC <small>2020 - presente</small></li>
                             <li className="subItemExp">
-                            External consultant in digital communication management and website development for <a href="https://estudiorec.com.ar" target="blank">Estudio REC</a>,
-                            the architecture firm Ratzkier and tourism agency <a href="https://epicaserviciosturisticos.com.ar" target="blank">Épica</a>.</li>
+                                External consultant in digital communication management and website development for <a href="https://estudiorec.com.ar" target="blank">Estudio REC</a>,
+                                the architecture firm Ratzkier and tourism agency <a href="https://epicaserviciosturisticos.com.ar" target="blank">Épica</a>.</li>
+                                <li className="itemExp">CARTA ONLINE <small>2024</small></li>
+                            <li className="subItemExp">
+                            Development of an innovative web application that simplifies menu management for bars, cafes, and restaurants. Customers can easily access the menu through a QR code. Available at <a href="https:cartaonline.com.ar" target="blank">cartaonline.com.ar</a> </li>
                         </ul>
                     </div>
                     <div className="dividerCard"> <div className="dividerBar"></div> </div>

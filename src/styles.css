@@ -1,3 +1,5 @@
+/* ARCHIVO CSS UNIFICADO - CURRICULUM VITAE */
+
 /* PALETA DE COLORES
 Color de fondo: #242424
 Color de fondo contenedor #323232;
@@ -10,18 +12,19 @@ título secundario BEBAS NEUE
 textos MONTSERRAT
 font-family: 'Roboto Slab', serif;*/
 
-
-/* Menores a 576px 
-aplica a todo aquello que no sea 
-reescrito en MediaQueries */
+/* ===== ESTILOS BASE ===== */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #242424;
+}
 
 body {
     background-color: #242424;
 }
 
-
-
-/*BARRA DE NAVEGACIÓN*/
+/* ===== BARRA DE NAVEGACIÓN ===== */
 .MenuNavBar {
     /* Posicionamiento en la parte inferior de la pantalla */
     position: fixed;
@@ -52,7 +55,7 @@ body {
     display: none;
 }
 
-/* CONTENEDOR PRINCIPAL */
+/* ===== CONTENEDOR PRINCIPAL ===== */
 .contenedor-general {
     height: 85vh;
     width: 100%;
@@ -78,7 +81,7 @@ body {
     background: linear-gradient(180deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
 }
 
-/* TOGGLE LANGUAGE */
+/* ===== TOGGLE LANGUAGE ===== */
 .toggle-language {
     position: absolute;
     top: 5%;
@@ -86,7 +89,7 @@ body {
     z-index: 9999;
 }
 
-/*INFORMACIÓN DE PERFIL*/
+/* ===== INFORMACIÓN DE PERFIL ===== */
 
 .contenedorHeaderyFooter {
     /*dimensiones contenedor*/
@@ -185,7 +188,7 @@ body {
     justify-content: space-between;
 }
 
-/* CONTENEDOR ABOUT ME */
+/* ===== CONTENEDOR ABOUT ME ===== */
 .contenedorSobreMi {
     /*Dimensiones del contenedor*/
     width: 100%;
@@ -296,7 +299,7 @@ body {
     font-size: 13px;
 }
 
-/* FORMACIÓN */
+/* ===== FORMACIÓN ===== */
 .contenedorFormacion {
     width: 100%;
 
@@ -354,7 +357,7 @@ body {
     font-size: 14px;
 }
 
-/* DOCENCIA */
+/* ===== DOCENCIA ===== */
 .contenedorDocencia {
     width: 100%;
     display: flex;
@@ -414,7 +417,7 @@ body {
     font-weight: 800;
 }
 
-/* EXPERIENCIA */
+/* ===== EXPERIENCIA ===== */
 .contenedorExperiencia {
     width: 100%;
     display: flex;
@@ -481,7 +484,7 @@ body {
     padding-left: 10px;
 }
 
-/* HABILIDADES SKILLS */
+/* ===== HABILIDADES SKILLS ===== */
 .contenedorHabilidades {
     width: 100%;
     display: flex;
@@ -603,7 +606,7 @@ body {
     display: none;
 }
 
-/* ANIMACIONES */
+/* ===== ANIMACIONES ===== */
 /* barra de carga de todas las cards */
 @keyframes fillBar {
     to {
@@ -640,6 +643,8 @@ body {
         transform: translateX(0);
     }
 }
+
+/* ===== MEDIA QUERIES ===== */
 
 /* Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */
@@ -1280,10 +1285,6 @@ body {
         font-weight: 800;
     }
 
-
-
-
-
     /* Barra inferior de las cards */
     .dividerCard {
         display: block;
@@ -1309,14 +1310,11 @@ body {
         /* Puedes cambiar la duración a lo que necesites */
     }
 
-
-
 }
 
 /* Desde 1200px en adelante */
-/* Bootstrap breakpoints LG y superiores */
+/* Bootstrap breakpoints XL y superiores */
 @media (min-width: 1200px) {
-    /* Tus estilos para dispositivos extra large y superiores van aquí */
 
     .contenedorCV {
         /*posición y forma del contenedor*/
@@ -1327,8 +1325,5 @@ body {
         justify-content: flex-start;
         max-height: 400px;
     }
-
-
-
 
 }

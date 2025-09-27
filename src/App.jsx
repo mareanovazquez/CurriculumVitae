@@ -1,7 +1,6 @@
 import 'normalize.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './estilos.css'
-import './index.css'
+import './styles.css'
 import { useState } from 'react'
 
 import { NavBar } from './Components/NavBar/NavBar'

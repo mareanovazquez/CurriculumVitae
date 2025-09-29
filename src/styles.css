@@ -1,7 +1,7 @@
 
 /* ===== ESTILOS BASE ===== */
 :root {
-  font-family: var(--font-system);
+  font-family: var(--font-primary);
   line-height: var(--line-height-normal);
   font-weight: var(--font-weight-normal);
   background-color: var(--color-bg-primary);
@@ -208,7 +208,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: var(--color-text-primary);
+    background-color: var(--color-bg-tertiary);
     padding-top: var(--padding-sm);
     padding-bottom: var(--padding-base);
     max-height: var(--max-height-sm);
@@ -296,12 +296,12 @@ body {
 }
 
 .contenedorFormacion .encabezadoFormacion {
-    color: #ff9800;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    letter-spacing: 5px;
-    font-size: 25px;
-    padding-bottom: 10px;
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-wide);
+    font-size: var(--font-size-2xl);
+    padding-bottom: var(--space-2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -311,36 +311,36 @@ body {
 }
 
 .contenidoFormacion {
-    background-color: #EEE5E9;
-    padding-top: 5px;
-    max-height: 250px;
+    background-color: var(--color-bg-tertiary);
+    padding-top: var(--space-1);
+    max-height: var(--max-height-sm);
     overflow-y: auto;
-    border-radius: 1%;
+    border-radius: var(--border-radius-sm);
 }
 
 .contenidoFormacion .formacion {
-    padding-right: 10px;
+    padding-right: var(--space-2);
 }
 
 .contenidoFormacion .titleFormacion {
-    font-family: 'bebas neue', sans-serif;
-    font-size: 20px;
-    letter-spacing: 1px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    font-family: var(--font-accent);
+    font-size: var(--font-size-lg);
+    letter-spacing: var(--letter-spacing-normal);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-1);
 }
 
 .contenidoFormacion .titleFormacion span {
-    background-color: #ff9800;
-    padding: 5px;
-    border-radius: 5px;
+    background-color: var(--color-primary);
+    padding: var(--space-1);
+    border-radius: var(--border-radius-sm);
 }
 
 .contenidoFormacion ul li {
     list-style: none;
     text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
 }
 
 /* ===== DOCENCIA ===== */
@@ -352,12 +352,12 @@ body {
 }
 
 .contenedorDocencia .encabezadoDocencia {
-    color: #ff9800;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    letter-spacing: 5px;
-    font-size: 25px;
-    padding-bottom: 5px;
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-wide);
+    font-size: var(--font-size-2xl);
+    padding-bottom: var(--space-1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -367,40 +367,40 @@ body {
 }
 
 .contenidoDocencia {
-    background-color: #EEE5E9;
-    max-height: 250px;
+    background-color: var(--color-bg-tertiary);
+    max-height: var(--max-height-sm);
     overflow-y: auto;
-    border-radius: 1%;
-    padding-top: 10px;
+    border-radius: var(--border-radius-sm);
+    padding-top: var(--space-2);
 
 }
 
 .contenidoDocencia .titleDocencia {
-    font-family: 'bebas neue', sans-serif;
-    font-size: 20px;
-    letter-spacing: 1px;
-    padding-bottom: 10px;
-    padding-right: 10px;
+    font-family: var(--font-accent);
+    font-size: var(--font-size-lg);
+    letter-spacing: var(--letter-spacing-normal);
+    padding-bottom: var(--space-2);
+    padding-right: var(--space-2);
 }
 
 .contenidoDocencia .titleDocencia span {
-    background-color: #ff9800;
-    padding: 5px;
-    border-radius: 5px;
+    background-color: var(--color-primary);
+    padding: var(--space-1);
+    border-radius: var(--border-radius-sm);
 }
 
 .contenidoDocencia ul li {
     list-style: none;
     text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
 }
 
 .contenidoDocencia ul li small {
     border-bottom-style: solid;
-    border-bottom-width: 3px;
-    border-bottom-color: #ff9800;
-    font-weight: 800;
+    border-bottom-width: var(--border-width-thin);
+    border-bottom-color: var(--color-primary);
+    font-weight: var(--font-weight-extra-bold);
 }
 
 /* ===== EXPERIENCIA ===== */
@@ -412,12 +412,12 @@ body {
 }
 
 .contenedorExperiencia .headerExperiencia {
-    color: #ff9800;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    letter-spacing: 5px;
-    font-size: 25px;
-    padding-bottom: 5px;
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-wide);
+    font-size: var(--font-size-2xl);
+    padding-bottom: var(--space-1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -427,13 +427,13 @@ body {
 }
 
 .contenidoExperiencia {
-    background-color: #EEE5E9;
-    max-height: 250px;
+    background-color: var(--color-bg-tertiary);
+    max-height: var(--max-height-sm);
     overflow-y: auto;
-    border-radius: 1%;
-    padding-top: 10px;
-    padding-left: 15px;
-    padding-right: 10px;
+    border-radius: var(--border-radius-sm);
+    padding-top: var(--space-2);
+    padding-left: var(--space-3);
+    padding-right: var(--space-2);
 }
 
 
@@ -444,30 +444,30 @@ body {
 .contenidoExperiencia ul li {
     list-style: none;
     text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
 }
 
 .contenidoExperiencia ul li small {
     border-bottom-style: solid;
-    border-bottom-width: 3px;
-    border-bottom-color: #ff9800;
-    font-weight: 800;
+    border-bottom-width: var(--border-width-thin);
+    border-bottom-color: var(--color-primary);
+    font-weight: var(--font-weight-extra-bold);
 }
 
 .contenidoExperiencia ul li a {
     text-decoration: none;
-    font-weight: 800;
-    color: #323232;
+    font-weight: var(--font-weight-extra-bold);
+    color: var(--color-text-secondary);
 }
 
 .contenidoExperiencia ul .itemExp {
-    padding-top: 20px;
-    font-weight: 800;
+    padding-top: var(--space-4);
+    font-weight: var(--font-weight-extra-bold);
 }
 
 .contenidoExperiencia ul .subItemExp {
-    padding-left: 10px;
+    padding-left: var(--space-2);
 }
 
 /* ===== HABILIDADES SKILLS ===== */
@@ -480,12 +480,12 @@ body {
 }
 
 .contenedorHabilidades .encabezadoHabilidades {
-    color: #ff9800;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    letter-spacing: 5px;
-    font-size: 25px;
-    padding-bottom: 5px;
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-wide);
+    font-size: var(--font-size-2xl);
+    padding-bottom: var(--space-1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -495,26 +495,26 @@ body {
 }
 
 .contenedorHabilidades .contenidoSkills {
-    background-color: #EEE5E9;
-    height: 270px;
+    background-color: var(--color-bg-tertiary);
+    height: var(--height-skills);
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border-radius: 1%;
+    border-radius: var(--border-radius-sm);
 }
 
 .contenedorHabilidades .contenidoSkills .skills {
-    padding-top: 20px;
+    padding-top: var(--space-4);
 
 }
 
 .contenedorHabilidades .contenidoSkills .listSkills {
     list-style: none;
     text-align: left;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    margin-left: -10px;
+    font-size: var(--font-size-sm);
+    font-family: var(--font-body);
+    margin-left: var(--space-negative);
 }
 
 .contenedorHabilidades .contenidoSkills .listSkills .skillItem {
@@ -523,35 +523,35 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: var(--space-2);
 }
 
 .contenedorHabilidades .contenidoSkills .listSkills .skillItem .figma-icon {
-    color: #323232;
-    font-size: 20px;
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-lg);
 }
 
 .contenedorHabilidades .contenidoSkills .listSkills li .skillText {
-    width: 30%;
-    padding-left: 5px;
+    width: var(--width-skill-text);
+    padding-left: var(--space-1);
     text-align: left;
-    font-size: 14px;
+    font-size: var(--font-size-sm);
 }
 
 .contenedorHabilidades .contenidoSkills .listSkills li .skillLevel {
-    width: 60%;
-    height: 10px;
+    width: var(--width-skill-level);
+    height: var(--height-skill-bar);
     position: relative;
 }
 .markLevel {
-    border-color: #323232;
+    border-color: var(--color-text-secondary);
     border-style: solid;
-    border-width: 2px;
-    border-radius: 3px;
-    width: 90%;
-    height: 11px;
+    border-width: var(--border-width-xThin);	
+    border-radius: var(--border-radius-sm);
+    width: var(--width-skill-bar);
+    height: var(--height-skill-bar);
     position: relative; /* Asegura que el contenido interno se posicione correctamente */
-    background-color: #f1f1f1; /* Un color de fondo para la barra vacía */
+    background-color: var(--color-bg-skill-empty); /* Un color de fondo para la barra vacía */
     overflow: hidden; /* Asegura que el contenido no se desborde */
     }
 
@@ -563,10 +563,10 @@ body {
 .levelJS,
 .levelReact {
     
-    height: 10px;
+    height: var(--height-skill-bar);
     width: 0%;
     /* Se inicia en 0, pero React lo actualizará */
-    background-color: #ff9800;
+    background-color: var(--color-primary);
 }
 
 
@@ -579,12 +579,12 @@ body {
 .percentageJS,
 .percentageReact {
     position: absolute;
-    top: 10px;
+    top: var(--space-2);
     /* Ajusta según necesidad, para posicionar el texto arriba de la barra */
     left: 0;
-    font-size: 12px;
-    color: #323232;
-    font-weight: 800;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-extra-bold);
 }
 
 .dividerBar,
@@ -810,7 +810,7 @@ body {
     }
 
     .biografia .textoBiografia {
-        font-family: 'Montserrat', sans-serif;
+        font-family: var(--font-body);
         font-size: 16px;
     }
 

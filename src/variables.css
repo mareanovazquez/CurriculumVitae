@@ -42,8 +42,7 @@
     /* Títulos secundarios */
     --font-body: 'Montserrat', sans-serif;
     /* Texto del cuerpo */
-    --font-system: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    /* Sistema */
+    
 
     /* Tamaños de fuente */
     --font-size-xs: 12px;
@@ -153,6 +152,7 @@
     --border-radius-container: 1%;
 
     /* Anchos de borde */
+    --border-width-xThin: 1px;
     --border-width-thin: 2px;
     --border-width-base: 3px;
     --border-width-thick: 8px;

@@ -16,8 +16,8 @@ export const Docencia = ({ language }) => {
                                     FACULTAD DE PERIODISMO Y COMUNICACIÓN SOCIAL</span></li>
                                 <li>Taller de narrativas <small>2017-2018</small></li>
                                 <li>Taller de tecnologías <small>2012-2017</small></li>
-                                <li>Periodismo digital y nuevos medios <small>2018 - presente</small></li>
-                                <li>Introducción a los lenguajes de programación <small>2018 - presente</small></li>
+                                <li>Periodismo digital y nuevos medios <small>2018 - 2024</small></li>
+                                <li>Introducción a los lenguajes de programación <small>2018 - 2025</small></li>
                                 <li>Seminario de posgrado "Vivir en las redes" <small>2019 - presente</small></li>
                             </ul>
                         </div>
@@ -58,8 +58,8 @@ export const Docencia = ({ language }) => {
                                     FACULTAD DE PERIODISMO Y COMUNICACIÓN SOCIAL</span></li>
                                 <li>Narrative Workshop <small>2017-2018</small></li>
                                 <li>Technology Workshop <small>2012-2017</small></li>
-                                <li>Digital Journalism and New Media <small>2018 - present</small></li>
-                                <li>Introduction to Programming Languages <small>2018 - present</small></li>
+                                <li>Digital Journalism and New Media <small>2018 - 2024</small></li>
+                                <li>Introduction to Programming Languages <small>2018 - 2025</small></li>
                                 <li>Postgraduate Seminar "Living on the Web" <small>2019 - present</small></li>
                             </ul>
                         </div>

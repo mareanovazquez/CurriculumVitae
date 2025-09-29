@@ -18,6 +18,7 @@
     /* Fondo contenedores */
     --color-bg-tertiary: #f1f1f1;
     /* Fondo claro */
+    --color-bg-skill-empty: #f1f1f1;
 
     /* Colores de texto */
     --color-text-primary: #EEE5E9;
@@ -53,8 +54,8 @@
     --font-size-xl: 18px;
     --font-size-2xl: 20px;
     --font-size-3xl: 25px;
-    --font-size-4xl: 28px;
-    --font-size-5xl: 30px;
+    --font-size-4xl: 35px;
+    --font-size-5xl: 40px;
     --font-size-6xl: 40px;
     --font-size-responsive: 1.5rem;
 
@@ -73,16 +74,13 @@
     /* ===== ESPACIADO ===== */
 
     /* Espaciado base (sistema de 4px) */
-    --space-1: 4px;
-    /* 0.25rem */
-    --space-2: 8px;
-    /* 0.5rem */
-    --space-3: 12px;
-    /* 0.75rem */
-    --space-4: 16px;
-    /* 1rem */
-    --space-5: 20px;
-    /* 1.25rem */
+    --space-xs: 1px;
+    --space-1: 5px;
+    --space-2: 10px;
+    --space-3: 15px;
+    --space-4: 20px;
+    --space-5: 25px;
+    --space-negative: -10px;
     --space-6: 24px;
     /* 1.5rem */
     --space-8: 32px;
@@ -119,6 +117,9 @@
     --width-8xl: 90%;
     --width-9xl: 95%;
     --width-full: 100%;
+    --width-skill-text: 30%;
+    --width-skill-level: 60%;
+    --width-skill-bar: 90%;
 
     /* Alturas */
     --height-xs: 10px;
@@ -128,11 +129,15 @@
     --height-lg: 90vh;
     --height-full: 100vh;
     --height-container: 270px;
+    --height-skills: 270px;
+    --height-skill-bar: 11px;
 
     /* Alturas máximas */
     --max-height-sm: 250px;
     --max-height-md: 350px;
     --max-height-lg: 400px;
+    --max-height-content: 250px;
+    --max-height-xl: 400px;
 
     /* ===== BORDES ===== */
 

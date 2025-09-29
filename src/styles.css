@@ -1,10 +1,9 @@
-
 /* ===== ESTILOS BASE ===== */
 :root {
-  font-family: var(--font-primary);
-  line-height: var(--line-height-normal);
-  font-weight: var(--font-weight-normal);
-  background-color: var(--color-bg-primary);
+    font-family: var(--font-primary);
+    line-height: var(--line-height-normal);
+    font-weight: var(--font-weight-normal);
+    background-color: var(--color-bg-primary);
 }
 
 body {
@@ -543,17 +542,21 @@ body {
     height: var(--height-skill-bar);
     position: relative;
 }
+
 .markLevel {
     border-color: var(--color-text-secondary);
     border-style: solid;
-    border-width: var(--border-width-xThin);	
+    border-width: var(--border-width-xThin);
     border-radius: var(--border-radius-sm);
     width: var(--width-skill-bar);
     height: var(--height-skill-bar);
-    position: relative; /* Asegura que el contenido interno se posicione correctamente */
-    background-color: var(--color-bg-skill-empty); /* Un color de fondo para la barra vacía */
-    overflow: hidden; /* Asegura que el contenido no se desborde */
-    }
+    position: relative;
+    /* Asegura que el contenido interno se posicione correctamente */
+    background-color: var(--color-bg-skill-empty);
+    /* Un color de fondo para la barra vacía */
+    overflow: hidden;
+    /* Asegura que el contenido no se desborde */
+}
 
 .levelRedaccion,
 .levelEdicion,
@@ -562,7 +565,7 @@ body {
 .levelCss,
 .levelJS,
 .levelReact {
-    
+
     height: var(--height-skill-bar);
     width: 0%;
     /* Se inicia en 0, pero React lo actualizará */
@@ -648,9 +651,7 @@ body {
     }
 
     .contenedorDescripcion h4 {
-        color: #EEE5E9;
         font-size: 25px;
-        color: #ff9800;
     }
 
     /* ABOUT ME */
@@ -790,7 +791,7 @@ body {
 
         display: block;
         text-align: left;
-        color: #EEE5E9;
+        color: var(--color-text-primary);
         font-family: var(--font-primary);
         padding-right: 10px;
     }
@@ -873,7 +874,8 @@ body {
     .toggle-language {
         top: 7%;
         left: 91%;
-    } 
+    }
+
     /*BARRA DE NAVEGACIÓN*/
     .MenuNavBar {
         /*posicionamiento contenedor*/
@@ -980,7 +982,7 @@ body {
     }
 
     .contenedorNombre h2 {
-        color: #EEE5E9;
+        color: var(--color-text-primary);
         font-size: 1.5rem;
     }
 
@@ -998,7 +1000,7 @@ body {
     }
 
     .contenedorFooter svg {
-        color: #EEE5E9;
+        color: var(--color-text-primary);
     }
 
     .contenedorFooter svg:hover {
@@ -1267,7 +1269,7 @@ body {
         /* Ajusta según necesidad, para posicionar el texto arriba de la barra */
         left: 0;
         font-size: 12px;
-        color: #323232;
+        color: var(--colot-text-secondary);
         font-weight: 800;
     }
 

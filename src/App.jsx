@@ -1,5 +1,6 @@
 import 'normalize.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './variables.css'
 import './styles.css'
 import { useState } from 'react'
 

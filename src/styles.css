@@ -1,27 +1,14 @@
-/* ARCHIVO CSS UNIFICADO - CURRICULUM VITAE */
-
-/* PALETA DE COLORES
-Color de fondo: #242424
-Color de fondo contenedor #323232;
-Fuente naranja #ff9800
-Fuente blanca #EEE5E9
-*/
-
-/* Titulo principal NUNITO 
-título secundario BEBAS NEUE
-textos MONTSERRAT
-font-family: 'Roboto Slab', serif;*/
 
 /* ===== ESTILOS BASE ===== */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  background-color: #242424;
+  font-family: var(--font-system);
+  line-height: var(--line-height-normal);
+  font-weight: var(--font-weight-normal);
+  background-color: var(--color-bg-primary);
 }
 
 body {
-    background-color: #242424;
+    background-color: var(--color-bg-primary);
 }
 
 /* ===== BARRA DE NAVEGACIÓN ===== */
@@ -31,8 +18,8 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 44444;
-    padding: 10px;
+    z-index: var(--z-index-navbar);
+    padding: var(--padding-base);
 
     /* Centrado horizontal */
     display: flex;
@@ -42,13 +29,13 @@ body {
 }
 
 .opcionesNavBar {
-    padding-bottom: 15px;
-    padding-right: 10px;
+    padding-bottom: var(--padding-md);
+    padding-right: var(--padding-base);
 }
 
 .opcionesNavBar :hover {
-    transform: scale(1.1);
-    transition: .3s;
+    transform: scale(var(--scale-hover));
+    transition: var(--transition-base);
 }
 
 .opcionesNavBar small {
@@ -57,8 +44,8 @@ body {
 
 /* ===== CONTENEDOR PRINCIPAL ===== */
 .contenedor-general {
-    height: 85vh;
-    width: 100%;
+    height: var(--height-md);
+    width: var(--width-full);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,9 +54,9 @@ body {
 
 .contenedorCV {
     /*posición y forma del contenedor*/
-    width: 90%;
-    height: 80vh;
-    border-radius: 1%;
+    width: var(--width-8xl);
+    height: var(--height-base);
+    border-radius: var(--border-radius-container);
 
     /*posición contenido*/
     display: flex;
@@ -78,23 +65,23 @@ body {
     align-items: center;
 
     /*decoración contenido*/
-    background: linear-gradient(180deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
+    background: var(--gradient-primary);
 }
 
 /* ===== TOGGLE LANGUAGE ===== */
 .toggle-language {
     position: absolute;
-    top: 5%;
-    left: 80%;
-    z-index: 9999;
+    top: var(--position-top-sm);
+    left: var(--position-left-lg);
+    z-index: var(--z-index-language-toggle);
 }
 
 /* ===== INFORMACIÓN DE PERFIL ===== */
 
 .contenedorHeaderyFooter {
     /*dimensiones contenedor*/
-    width: 100%;
-    height: 90vh;
+    width: var(--width-full);
+    height: var(--height-lg);
 
     /*posicionamiento contenido*/
     display: flex;
@@ -117,8 +104,8 @@ body {
 }
 
 .imgPerfil {
-    width: 35%;
-    border-radius: 50%;
+    width: var(--width-lg);
+    border-radius: var(--border-radius-full);
     object-fit: contain;
     object-position: center;
 
@@ -126,14 +113,14 @@ body {
 
 .contenedorNombre {
     text-align: center;
-    padding-top: 20px;
+    padding-top: var(--space-5);
 
 }
 
 .contenedorNombre h2 {
-    color: #EEE5E9;
-    font-size: 25px;
-    font-family: 'Roboto Slab', serif;
+    color: var(--color-text-primary);
+    font-size: var(--font-size-3xl);
+    font-family: var(--font-primary);
 }
 
 .contenedorFooter {
@@ -148,7 +135,7 @@ body {
 }
 
 .contenedorFooter svg {
-    color: #EEE5E9;
+    color: var(--color-text-primary);
 }
 
 .contenedorFooter svg:hover {
@@ -157,23 +144,23 @@ body {
 }
 
 .contenedorDescripcion {
-    color: #ff9800;
+    color: var(--color-text-accent);
     text-align: center;
 
 }
 
 .contenedorDescripcion h4 {
-    font-size: 20px;
+    font-size: var(--font-size-2xl);
     width: 0;
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
-    border-right: 0.15em solid #ff9800;
+    border-right: var(--border-width-typing) solid var(--color-primary);
     animation: typing 1.5s steps(38) 0.5s 1 normal both, blink 1s steps(1) infinite;
 }
 
 .contenedorDescargaCV {
-    padding-top: 10px;
+    padding-top: var(--padding-base);
 }
 
 .contenedorDescargaCV .descargaCV {
@@ -181,7 +168,7 @@ body {
 }
 
 .contenedorDEFH {
-    width: 90%;
+    width: var(--width-8xl);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -201,12 +188,12 @@ body {
 }
 
 .contenedorSobreMi .encabezadoSobreMi {
-    color: #ff9800;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    padding-bottom: 10px;
-    letter-spacing: 5px;
-    font-size: 25px;
+    color: var(--color-text-accent);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    padding-bottom: var(--padding-base);
+    letter-spacing: var(--space-1);
+    font-size: var(--font-size-3xl);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,68 +208,67 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: #EEE5E9;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    max-height: 250px;
+    background-color: var(--color-text-primary);
+    padding-top: var(--padding-sm);
+    padding-bottom: var(--padding-base);
+    max-height: var(--max-height-sm);
     overflow-y: auto;
-    border-radius: 1%;
+    border-radius: var(--border-radius-container);
 }
 
 .biografia {
-    width: 95%;
-    padding-left: 10px;
-    padding-top: 10px;
+    width: var(--width-9xl);
+    padding-left: var(--padding-base);
+    padding-top: var(--padding-base);
 }
 
 .biografia .textoBiografia {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    padding-right: 10px;
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    padding-right: var(--padding-base);
 }
 
 .biografia .primerParrafo::first-letter {
     text-transform: uppercase;
-    font-family: 'Roboto Slab', serif;
-    font-style: 900;
-    font-size: 28px;
-    color: #ff9800;
+    font-family: var(--font-primary);
+    font-style: var(--font-weight-black);
+    font-size: var(--font-size-4xl);
+    color: var(--color-primary);
 }
 
 .biografia .segundoParrafo ul {
-    border-left-width: 8px;
-    border-left-color: #ff9800;
+    border-left-width: var(--border-width-thick);
+    border-left-color: var(--color-primary);
     border-left-style: solid;
-    padding-left: 1 rem;
+    padding-left: 1rem;
 }
 
 .biografia .textoBiografia ul li {
     list-style: none;
-    font-weight: 600;
-    font-size: 13px;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
 }
 
 .biografia .textoBiografia a {
     text-decoration: none;
-    font-weight: 800;
-    color: #e40434;
-    letter-spacing: 2px;
+    font-weight: var(--font-weight-extra-bold);
+    color: var(--color-text-error);
+    letter-spacing: var(--space-2);
 }
 
 .datosPerfil {
     /*Dimensiones del contenedor*/
-    width: 90%;
+    width: var(--width-8xl);
     margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-family: var(--font-body);
+    font-size: var(--font-size-md);
 
 }
 
 .datosPerfil p {
-    border-bottom: 2px;
-    border-bottom-color: #ff9800;
+    border-bottom: var(--border-width-thin);
+    border-bottom-color: var(--color-primary);
     border-bottom-style: solid;
-
 
     /*disposición del contenido*/
     display: flex;
@@ -292,11 +278,11 @@ body {
 }
 
 .datosPerfil p span {
-    background-color: #ff9800;
-    color: #EEE5E9;
-    font-weight: 900;
-    padding: 3px;
-    font-size: 13px;
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-black);
+    padding: var(--padding-xs);
+    font-size: var(--font-size-sm);
 }
 
 /* ===== FORMACIÓN ===== */

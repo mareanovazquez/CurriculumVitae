@@ -22,7 +22,7 @@ export const AboutMe = ({ language }) => {
                             <p className="textoBiografia">A lo largo de mi trayectoria académica y profesional, adquirí conocimientos y desarrollé habilidades en comunicación, periodismo, docencia e investigación y <i>web deb</i>. Me siento cómodo trabajando en equipo, me adapto fácilmente a nuevos entornos y tengo un alto compromiso para con los proyectos que asumo. </p>
                         </div>
                         <div className="datosPerfil">
-                            <p> <span>EDAD:</span> 43 años </p>
+                            <p> <span>EDAD:</span> 45 años </p>
                             <p> <span>ESTADO CIVIL:</span> Casado</p>
                             <p> <span>UBICACIÓN:</span>CABA</p>
                             <p><span>DISPONIBILIDAD:</span>Freelance</p>
@@ -50,7 +50,7 @@ export const AboutMe = ({ language }) => {
                             <p className="textoBiografia">Throughout my academic and professional career, I have acquired knowledge and developed skills in communication, journalism, teaching and research, and web development. I feel comfortable working in teams, I easily adapt to new environments, and I have a high level of commitment to the projects I undertake. </p>
                         </div>
                         <div className="datosPerfil">
-                            <p> <span>AGE:</span> 43 </p>
+                            <p> <span>AGE:</span> 45 </p>
                             <p> <span>MARITAL STATUS:</span> Married</p>
                             <p> <span>LOCATION:</span>CABA</p>
                             <p><span>AVAILABILITY:</span>Freelance</p>

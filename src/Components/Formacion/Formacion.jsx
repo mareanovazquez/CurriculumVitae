@@ -24,6 +24,9 @@ export const Formacion = ({ language }) => {
                                 <li>Javascript (CODER HOUSE)</li>
                                 <li>React (CODER HOUSE)</li>
                                 <li>Diseño, contenido e investigación UX-UI (CODER HOUSE)</li>
+                                <li>Web designer (DIGITAL HOUSE)</li>
+                                <li>Profesional Developer (DIGITAL HOUSE)</li>
+                                <li>Front End Developer (DIGITAL HOUSE)</li>
                             </ul>
                         </div>
                     </div>
@@ -48,6 +51,9 @@ export const Formacion = ({ language }) => {
                                 <li>JavaScript (CODER HOUSE)</li>
                                 <li>React (CODER HOUSE)</li>
                                 <li>UX-UI Design, Content, and Research (CODER HOUSE)</li>
+                                <li>Web Designer (DIGITAL HOUSE)</li>
+                                <li>Professional Developer (DIGITAL HOUSE)</li>
+                                <li>Front End Developer (DIGITAL HOUSE)</li>
                             </ul>
                         </div>
                     </div>

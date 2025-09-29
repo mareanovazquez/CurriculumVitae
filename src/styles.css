@@ -323,9 +323,9 @@ body {
 }
 
 .contenidoFormacion .titleFormacion {
-    font-family: var(--font-accent);
+    font-family: var(--font-secondary);
     font-size: var(--font-size-lg);
-    letter-spacing: var(--letter-spacing-normal);
+    letter-spacing: var(--space-xs);
     padding-top: var(--space-2);
     padding-bottom: var(--space-1);
 }
@@ -376,9 +376,9 @@ body {
 }
 
 .contenidoDocencia .titleDocencia {
-    font-family: var(--font-accent);
+    font-family: var(--font-secondary);
     font-size: var(--font-size-lg);
-    letter-spacing: var(--letter-spacing-normal);
+    letter-spacing: var(--space-xs);
     padding-bottom: var(--space-2);
     padding-right: var(--space-2);
 }
@@ -791,7 +791,7 @@ body {
         display: block;
         text-align: left;
         color: #EEE5E9;
-        font-family: 'Roboto Slab', serif;
+        font-family: var(--font-primary);
         padding-right: 10px;
     }
 
@@ -1043,7 +1043,7 @@ body {
 
     .contenedorSobreMi .encabezadoSobreMi {
         color: #ff9800;
-        font-family: 'Roboto Slab', serif;
+        font-family: var(--font-primary);
         font-weight: 700;
         letter-spacing: 5px;
         font-size: 40px;
@@ -1098,7 +1098,7 @@ body {
 
     .contenedorFormacion .encabezadoFormacion {
         color: #ff9800;
-        font-family: 'Roboto Slab', serif;
+        font-family: var(--font-primary);
         font-weight: 700;
         letter-spacing: 5px;
         font-size: 40px;
@@ -1130,7 +1130,7 @@ body {
 
     .contenedorDocencia .encabezadoDocencia {
         color: #ff9800;
-        font-family: 'Roboto Slab', serif;
+        font-family: var(--font-primary);
         font-weight: 700;
         letter-spacing: 5px;
         font-size: 40px;
@@ -1160,7 +1160,7 @@ body {
 
     .contenedorExperiencia .headerExperiencia {
         color: #ff9800;
-        font-family: 'Roboto Slab', serif;
+        font-family: var(--font-primary);
         font-weight: 700;
         letter-spacing: 5px;
         font-size: 40px;
@@ -1193,7 +1193,7 @@ body {
 
     .contenedorHabilidades .encabezadoHabilidades {
         color: #ff9800;
-        font-family: 'Roboto Slab', serif;
+        font-family: var(--font-primary);
         font-weight: 700;
         letter-spacing: 5px;
         font-size: 40px;
@@ -1214,7 +1214,7 @@ body {
         list-style: none;
         text-align: left;
         font-size: 14px;
-        font-family: "Montserrat", sans-serif;
+        font-family: var(--font-body);
         margin-left: -10px;
     }
 

@@ -16,20 +16,6 @@ export const Portfolio = ({ language }) => {
       imagen: "", // Puedes agregar la URL de una imagen
     },
     {
-      id: 2,
-      titulo: {
-        es: "Ratzkier Arquitectura",
-        en: "Ratzkier Architecture",
-      },
-      descripcion: {
-        es: "Portfolio web para estudio de arquitectura con galería de proyectos.",
-        en: "Web portfolio for architecture studio with project gallery.",
-      },
-      tecnologias: ["HTML5", "CSS3", "Bootstrap"],
-      url: "https://ratzkierarquitectura.com.ar",
-      imagen: "",
-    },
-    {
       id: 3,
       titulo: {
         es: "Épica Servicios Turísticos",
@@ -58,7 +44,7 @@ export const Portfolio = ({ language }) => {
       imagen: "",
     },
     {
-      id: 5,
+      id: 2,
       titulo: {
         es: "Jardín Hermano Sol",
         en: "Hermano Sol Kindergarten",
@@ -72,7 +58,7 @@ export const Portfolio = ({ language }) => {
       imagen: "",
     },
     {
-      id: 6,
+      id: 5,
       titulo: {
         es: "Carta Online",
         en: "Carta Online",
@@ -83,6 +69,21 @@ export const Portfolio = ({ language }) => {
       },
       tecnologias: ["HTML", "CSS3", "JavaScript", "React", "Firebase"],
       url: "https://cartaonline.com.ar",
+      imagen: "",
+    },
+
+    {
+      id: 6,
+      titulo: {
+        es: "Ratzkier Arquitectura",
+        en: "Ratzkier Architecture",
+      },
+      descripcion: {
+        es: "Portfolio web para estudio de arquitectura con galería de proyectos.",
+        en: "Web portfolio for architecture studio with project gallery.",
+      },
+      tecnologias: ["HTML5", "CSS3", "Bootstrap"],
+      url: "https://ratzkierarquitectura.com.ar",
       imagen: "",
     },
   ];

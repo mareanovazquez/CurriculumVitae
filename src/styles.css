@@ -107,13 +107,11 @@ body {
     border-radius: var(--border-radius-full);
     object-fit: contain;
     object-position: center;
-
 }
 
 .contenedorNombre {
     text-align: center;
     padding-top: var(--space-5);
-
 }
 
 .contenedorNombre h2 {
@@ -145,7 +143,6 @@ body {
 .contenedorDescripcion {
     color: var(--color-text-accent);
     text-align: center;
-
 }
 
 .contenedorDescripcion h4 {
@@ -155,7 +152,9 @@ body {
     white-space: nowrap;
     margin: 0 auto;
     border-right: var(--border-width-typing) solid var(--color-primary);
-    animation: typing 1.5s steps(38) 0.5s 1 normal both, blink 1s steps(1) infinite;
+    animation:
+        typing 1.5s steps(38) 0.5s 1 normal both,
+        blink 1s steps(1) infinite;
 }
 
 .contenedorDescargaCV {
@@ -183,7 +182,6 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 .contenedorSobreMi .encabezadoSobreMi {
@@ -261,7 +259,6 @@ body {
     margin: 0 auto;
     font-family: var(--font-body);
     font-size: var(--font-size-md);
-
 }
 
 .datosPerfil p {
@@ -371,7 +368,6 @@ body {
     overflow-y: auto;
     border-radius: var(--border-radius-sm);
     padding-top: var(--space-2);
-
 }
 
 .contenidoDocencia .titleDocencia {
@@ -435,7 +431,6 @@ body {
     padding-right: var(--space-2);
 }
 
-
 .contenidoExperiencia ul {
     padding-left: 0;
 }
@@ -469,13 +464,109 @@ body {
     padding-left: var(--space-2);
 }
 
+/* ===== PORTFOLIO ===== */
+.contenedorPortfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contenedorPortfolio .encabezadoPortfolio {
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-wide);
+    font-size: var(--font-size-2xl);
+    padding-bottom: var(--space-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+    animation: fadeInAndMoveUp 2s forwards;
+    opacity: 0;
+}
+
+.contenidoPortfolio {
+    background-color: var(--color-bg-tertiary);
+    max-height: var(--max-height-sm);
+    overflow-y: auto;
+    border-radius: var(--border-radius-sm);
+    padding: var(--space-3);
+}
+
+.gridProyectos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+}
+
+.cardProyecto {
+    background-color: var(--color-bg-primary);
+    border-radius: var(--border-radius-md);
+    padding: var(--space-3);
+    transition: var(--transition-base);
+    border: var(--border-width-xThin) solid var(--color-bg-secondary);
+}
+
+.cardProyecto:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-primary);
+}
+
+.cardProyectoHeader .tituloProyecto {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-lg);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-2);
+    letter-spacing: var(--space-xs);
+}
+
+.cardProyectoBody .descripcionProyecto {
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-2);
+}
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    margin-bottom: var(--space-2);
+}
+
+.techBadge {
+    background-color: var(--color-primary);
+    color: var(--color-text-secondary);
+    font-family: var(--font-body);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    padding: var(--padding-xs) var(--padding-sm);
+    border-radius: var(--border-radius-sm);
+}
+
+.cardProyectoFooter .btnVerProyecto {
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: var(--font-weight-extra-bold);
+    transition: var(--transition-fast);
+}
+
+.cardProyectoFooter .btnVerProyecto:hover {
+    color: var(--color-primary-light);
+    text-decoration: underline;
+}
+
 /* ===== HABILIDADES SKILLS ===== */
 .contenedorHabilidades {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
 }
 
 .contenedorHabilidades .encabezadoHabilidades {
@@ -505,7 +596,6 @@ body {
 
 .contenedorHabilidades .contenidoSkills .skills {
     padding-top: var(--space-4);
-
 }
 
 .contenedorHabilidades .contenidoSkills .listSkills {
@@ -565,14 +655,11 @@ body {
 .levelCss,
 .levelJS,
 .levelReact {
-
     height: var(--height-skill-bar);
     width: 0%;
     /* Se inicia en 0, pero React lo actualizará */
     background-color: var(--color-primary);
 }
-
-
 
 .percentageRedaccion,
 .percentageEdicion,
@@ -638,7 +725,6 @@ body {
 /* Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */
 @media (min-width: 576px) {
-
     /* TOGGLE LANGUAGE */
     .toggle-language {
         top: 5%;
@@ -675,7 +761,6 @@ body {
 
     .contenedorFormacion .encabezadoFormacion {
         padding-bottom: 10px;
-
     }
 
     .contenidoFormacion .titleFormacion {
@@ -692,7 +777,6 @@ body {
         padding-bottom: 10px;
     }
 
-
     .contenidoDocencia .titleDocencia {
         font-size: 25px;
     }
@@ -706,7 +790,6 @@ body {
     .contenedorExperiencia .encabezadoExperiencia {
         padding-bottom: 10px;
     }
-
 
     .contenidoExperiencia ul .itemExp {
         font-size: 16px;
@@ -752,13 +835,19 @@ body {
         font-size: 14px;
     }
 
+    /* PORTFOLIO */
+    .contenedorPortfolio .encabezadoPortfolio {
+        padding-bottom: 10px;
+    }
 
+    .contenidoPortfolio {
+        max-height: 350px;
+    }
 }
 
 /* Entre 768px y 991px */
 /* Bootstrap breakpoints MD y superiores */
 @media (min-width: 768px) {
-
     .toggle-language {
         top: 5%;
         left: 88%;
@@ -773,14 +862,12 @@ body {
         align-items: center;
     }
 
-
     .contenedorHeader .contenedorNombre {
         display: none;
     }
 
     .imgPerfil {
         width: 45%;
-
     }
 
     .contenedorFooter {
@@ -788,7 +875,6 @@ body {
     }
 
     .contenedorFooter .contenedorNombreAlt {
-
         display: block;
         text-align: left;
         color: var(--color-text-primary);
@@ -864,13 +950,24 @@ body {
         height: auto;
         max-height: 350px;
     }
-}
 
+    /* PORTFOLIO */
+    .contenedorPortfolio .encabezadoPortfolio {
+        font-size: 30px;
+    }
+
+    .contenidoPortfolio {
+        max-height: 400px;
+    }
+
+    .gridProyectos {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* Entre 992px y 1199px */
 /* Bootstrap breakpoints LG y superiores */
 @media (min-width: 992px) {
-
     .toggle-language {
         top: 7%;
         left: 91%;
@@ -901,7 +998,7 @@ body {
 
     .opcionesNavBar :hover {
         transform: scale(1.1);
-        transition: .3s;
+        transition: 0.3s;
     }
 
     .btn-descargaCV {
@@ -913,7 +1010,6 @@ body {
     }
 
     .contenedor-general {
-
         /* Posición general del contenedor del CV */
         display: flex;
         flex-direction: row;
@@ -936,7 +1032,11 @@ body {
         align-items: center;
 
         /*decoración contenido*/
-        background: linear-gradient(270deg, rgba(50, 50, 50, 1) 0%, rgba(36, 36, 36, 1) 100%);
+        background: linear-gradient(
+            270deg,
+            rgba(50, 50, 50, 1) 0%,
+            rgba(36, 36, 36, 1) 100%
+        );
     }
 
     /*INFORMACIÓN DE PERFIL*/
@@ -951,7 +1051,6 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
 
     .contenedorHeader {
@@ -972,7 +1071,6 @@ body {
         border-radius: 50%;
         object-fit: contain;
         object-position: center;
-
     }
 
     .contenedorHeader .contenedorNombre {
@@ -1024,7 +1122,9 @@ body {
         white-space: nowrap;
         margin: 0 auto;
         border-right: 0.15em solid #ff9800;
-        animation: typing 1.5s steps(38) 0.5s 1 normal both, blink 1s steps(1) infinite;
+        animation:
+            typing 1.5s steps(38) 0.5s 1 normal both,
+            blink 1s steps(1) infinite;
     }
 
     .contenedorDescargaCV {
@@ -1038,7 +1138,6 @@ body {
 
     /* CONTENEDOR ABOUT ME */
     .contenedorSobreMi {
-
         /*Dimensiones del contenedor*/
         height: 90vh;
     }
@@ -1061,7 +1160,7 @@ body {
 
     .contenidoSobreMi {
         justify-content: flex-start;
-        max-height: 400px;
+        max-height: 450px;
     }
 
     .biografia {
@@ -1090,12 +1189,10 @@ body {
         font-size: 15px;
     }
 
-
     /* FORMACIÓN */
     .contenedorFormacion {
         /* Dimensiones del contenedor */
         height: 90vh;
-
     }
 
     .contenedorFormacion .encabezadoFormacion {
@@ -1116,12 +1213,11 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        max-height: 400px;
+        max-height: 450px;
     }
 
     .formacion {
         padding: 10px;
-
     }
 
     /* DOCENCIA */
@@ -1146,7 +1242,7 @@ body {
     }
 
     .contenidoDocencia {
-        max-height: 400px;
+        max-height: 450px;
     }
 
     .contenidoDocencia .docencia {
@@ -1175,7 +1271,7 @@ body {
     }
 
     .contenidoExperiencia {
-        max-height: 400px;
+        max-height: 450px;
         padding-left: 20px;
     }
 
@@ -1242,7 +1338,6 @@ body {
         position: relative;
     }
 
-
     .levelRedaccion,
     .levelEdicion,
     .levelLanguage,
@@ -1273,6 +1368,43 @@ body {
         font-weight: 800;
     }
 
+    /* PORTFOLIO */
+    .contenedorPortfolio {
+        height: 100%;
+    }
+
+    .contenedorPortfolio .encabezadoPortfolio {
+        color: #ff9800;
+        font-family: var(--font-primary);
+        font-weight: 700;
+        letter-spacing: 5px;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s;
+        animation: fadeInAndMoveUp 2s forwards;
+        opacity: 0;
+    }
+
+    .contenidoPortfolio {
+        max-height: 400px;
+        padding: var(--space-4);
+    }
+
+    .gridProyectos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-4);
+    }
+
+    .cardProyectoHeader .tituloProyecto {
+        font-size: var(--font-size-xl);
+    }
+
+    .cardProyectoBody .descripcionProyecto {
+        font-size: var(--font-size-md);
+    }
+
     /* Barra inferior de las cards */
     .dividerCard {
         display: block;
@@ -1297,13 +1429,11 @@ body {
         animation: fillBar 4s ease-in-out forwards;
         /* Puedes cambiar la duración a lo que necesites */
     }
-
 }
 
 /* Desde 1200px en adelante */
 /* Bootstrap breakpoints XL y superiores */
 @media (min-width: 1200px) {
-
     .contenedorCV {
         /*posición y forma del contenedor*/
         width: 90%;
@@ -1311,7 +1441,21 @@ body {
 
     .contenidoSobreMi {
         justify-content: flex-start;
-        max-height: 400px;
+        max-height: 500px;
     }
 
+    .contenidoFormacion {
+        max-height: 500px;
+    }
+
+    .contenidoPortfolio {
+        max-height: 500px;
+    }
+
+    .contenidoExperiencia {
+        max-height: 500px;
+    }
+    .contenidoSkills {
+        max-height: 500px;
+    }
 }

@@ -50,10 +50,6 @@ export const AboutMe = ({ language }) => {
               </p>
               <p>
                 {" "}
-                <span>ESTADO CIVIL:</span> Casado
-              </p>
-              <p>
-                {" "}
                 <span>UBICACIÓN:</span>CABA
               </p>
               <p>
@@ -113,10 +109,6 @@ export const AboutMe = ({ language }) => {
               <p>
                 {" "}
                 <span>AGE:</span> 45{" "}
-              </p>
-              <p>
-                {" "}
-                <span>MARITAL STATUS:</span> Married
               </p>
               <p>
                 {" "}

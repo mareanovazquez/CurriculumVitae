@@ -49,8 +49,8 @@ export const Footer = ({ language }) => {
               <Nav.Link href="mailto:marianodariovazquez@gmail.com">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="26"
+                  height="26"
                   fill="currentColor"
                   className="bi bi-envelope"
                   viewBox="0 0 16 16"
@@ -66,8 +66,8 @@ export const Footer = ({ language }) => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
+                  width="26"
+                  height="26"
                   fill="currentColor"
                   className="bi bi-linkedin"
                   viewBox="0 0 16 16"
@@ -83,8 +83,8 @@ export const Footer = ({ language }) => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="26"
+                  height="26"
                   fill="currentColor"
                   className="bi bi-github "
                   viewBox="0 0 16 16"
@@ -100,8 +100,8 @@ export const Footer = ({ language }) => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="26"
+                  height="26"
                   fill="currentColor"
                   className="bi bi-wordpress"
                   viewBox="0 0 16 16"
@@ -119,8 +119,8 @@ export const Footer = ({ language }) => {
               <Nav.Link as={Link} to="/portfolio">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="26"
+                  height="26"
                   fill="currentColor"
                   className="bi bi-folder"
                   viewBox="0 0 16 16"
@@ -163,8 +163,8 @@ export const Footer = ({ language }) => {
               <Nav.Link href="mailto:mariano@estudiorec.com.ar">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="26"
+                  height="26"
                   fill="currentColor"
                   className="bi bi-envelope"
                   viewBox="0 0 16 16"
@@ -180,8 +180,8 @@ export const Footer = ({ language }) => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
+                  width="26"
+                  height="26"
                   fill="currentColor"
                   className="bi bi-linkedin"
                   viewBox="0 0 16 16"
@@ -197,8 +197,8 @@ export const Footer = ({ language }) => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="26"
+                  height="26"
                   fill="currentColor"
                   className="bi bi-github "
                   viewBox="0 0 16 16"
@@ -214,8 +214,8 @@ export const Footer = ({ language }) => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="26"
+                  height="26"
                   fill="currentColor"
                   className="bi bi-wordpress"
                   viewBox="0 0 16 16"
@@ -233,8 +233,8 @@ export const Footer = ({ language }) => {
               <Nav.Link as={Link} to="/portfolio">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="26"
+                  height="26"
                   fill="currentColor"
                   className="bi bi-folder"
                   viewBox="0 0 16 16"

@@ -36,11 +36,11 @@
     /* ===== TIPOGRAFÍA ===== */
 
     /* Familias de fuentes */
-    --font-primary: 'Roboto Slab', serif;
+    --font-primary: "Inter", sans-serif;
     /* Títulos principales */
-    --font-secondary: 'Bebas Neue', sans-serif;
+    --font-secondary: "Inter", sans-serif;
     /* Títulos secundarios */
-    --font-body: 'Montserrat', sans-serif;
+    --font-body: "Sora", sans-serif;;
     /* Texto del cuerpo */
     
 

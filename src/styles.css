@@ -250,7 +250,7 @@ body {
     text-decoration: none;
     font-weight: var(--font-weight-extra-bold);
     color: var(--color-text-error);
-    letter-spacing: var(--space-2);
+   
 }
 
 .datosPerfil {

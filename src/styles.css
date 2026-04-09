@@ -677,20 +677,7 @@ body {
     font-weight: var(--font-weight-extra-bold);
 }
 
-.dividerBar,
-.dividerCard {
-    display: none;
-}
-
 /* ===== ANIMACIONES ===== */
-/* barra de carga de todas las cards */
-@keyframes fillBar {
-    to {
-        width: 100%;
-        /* Llena completamente el div */
-    }
-}
-
 @keyframes typing {
     from {
         width: 0;
@@ -1405,30 +1392,6 @@ body {
         font-size: var(--font-size-md);
     }
 
-    /* Barra inferior de las cards */
-    .dividerCard {
-        display: block;
-        width: 98%;
-        height: 2px;
-        margin-right: auto;
-        margin-left: auto;
-        position: relative;
-    }
-
-    .dividerBar {
-        display: block;
-        height: 100%;
-        width: 0%;
-        /* Comienza sin llenado */
-        background-color: #ff9800;
-        /* Color de la barra de progreso */
-        position: absolute;
-        top: 0;
-        left: 0;
-        /* Animación */
-        animation: fillBar 4s ease-in-out forwards;
-        /* Puedes cambiar la duración a lo que necesites */
-    }
 }
 
 /* Desde 1200px en adelante */

@@ -42,7 +42,6 @@ export const Docencia = ({ language }) => {
                         </div>
 
                     </div>
-                    <div className="dividerCard"> <div className="dividerBar"></div> </div>
                 </div>
                 :
                 <div className="contenedorDocencia">
@@ -80,7 +79,6 @@ export const Docencia = ({ language }) => {
                         </div>
 
                     </div>
-                    <div className="dividerCard"> <div className="dividerBar"></div> </div>
                 </div>
 
             }

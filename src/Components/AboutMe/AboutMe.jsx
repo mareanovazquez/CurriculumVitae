@@ -57,10 +57,6 @@ export const AboutMe = ({ language }) => {
               </p>
             </div>
           </div>
-          <div className="dividerCard">
-            {" "}
-            <div className="dividerBar"></div>{" "}
-          </div>
         </div>
       ) : (
         <div className="contenedorSobreMi">
@@ -118,10 +114,6 @@ export const AboutMe = ({ language }) => {
                 <span>AVAILABILITY:</span>Freelance
               </p>
             </div>
-          </div>
-          <div className="dividerCard">
-            {" "}
-            <div className="dividerBar"></div>{" "}
           </div>
         </div>
       )}

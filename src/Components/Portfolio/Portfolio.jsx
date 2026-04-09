@@ -127,9 +127,6 @@ export const Portfolio = ({ language }) => {
               ))}
             </div>
           </div>
-          <div className="dividerCard">
-            <div className="dividerBar"></div>
-          </div>
         </div>
       ) : (
         <div className="contenedorPortfolio">
@@ -167,9 +164,6 @@ export const Portfolio = ({ language }) => {
                 </div>
               ))}
             </div>
-          </div>
-          <div className="dividerCard">
-            <div className="dividerBar"></div>
           </div>
         </div>
       )}

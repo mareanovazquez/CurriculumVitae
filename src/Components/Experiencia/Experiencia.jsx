@@ -35,7 +35,6 @@ export const Experiencia = ({ language }) => {
                             Desarrollo de una aplicación web innovadora que simplifica la gestión de cartas y menús para bares, cafeterías y restaurantes. Los clientes podrán acceder fácilmente a carta mediante un código QR. Disponible en <a href="https://cartaonline.com.ar" target="_blank">cartaonline.com.ar</a> </li>
                         </ul>
                     </div>
-                    <div className="dividerCard"> <div className="dividerBar"></div> </div>
                 </div>
                 :
                 <div className="contenedorExperiencia">
@@ -69,7 +68,6 @@ export const Experiencia = ({ language }) => {
                             Development of an innovative web application that simplifies menu management for bars, cafes, and restaurants. Customers can easily access menus through QR codes. Available at <a href="https://cartaonline.com.ar" target="_blank">cartaonline.com.ar</a></li>
                         </ul>
                     </div>
-                    <div className="dividerCard"> <div className="dividerBar"></div> </div>
                 </div>
             }
         </>

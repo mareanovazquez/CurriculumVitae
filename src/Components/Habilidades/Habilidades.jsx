@@ -95,7 +95,6 @@ export const Habilidades = ({ language }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="dividerCard"> <div className="dividerBar"></div> </div>
                 </div>
                 :
                 <div className="contenedorHabilidades">
@@ -168,7 +167,6 @@ export const Habilidades = ({ language }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="dividerCard"> <div className="dividerBar"></div> </div>
                 </div>
             }
         </>

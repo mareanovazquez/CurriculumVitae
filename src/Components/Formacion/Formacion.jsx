@@ -37,10 +37,6 @@ export const Formacion = ({ language }) => {
               </ul>
             </div>
           </div>
-          <div className="dividerCard">
-            {" "}
-            <div className="dividerBar"></div>{" "}
-          </div>
         </div>
       ) : (
         <div className="contenedorFormacion">
@@ -76,10 +72,6 @@ export const Formacion = ({ language }) => {
                 <li>Front End Developer (DIGITAL HOUSE)</li>
               </ul>
             </div>
-          </div>
-          <div className="dividerCard">
-            {" "}
-            <div className="dividerBar"></div>{" "}
           </div>
         </div>
       )}

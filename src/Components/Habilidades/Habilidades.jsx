@@ -7,6 +7,7 @@ import { faSquareJs } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from '@fortawesome/free-brands-svg-icons'
 import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 import { faFigma } from "@fortawesome/free-brands-svg-icons";
+import { faRobot } from "@fortawesome/free-solid-svg-icons";
 
 import { LoadingBarEdicion } from "../Loading/LoadingBarEdicion";
 
@@ -17,6 +18,7 @@ import { LoadingBarJavascript } from "../Loading/LoadingBarJavascript";
 import { LoadingBarReact } from "../Loading/LoadingBarReact";
 import { LoadingBarLanguage } from "../Loading/LoadingBarLanguage";
 import { LoadingBarFigma } from "../Loading/LoadingBarFigma";
+import { LoadingBarIA } from "../Loading/LoadingBarIA";
 
 
 export const Habilidades = ({ language }) => {
@@ -90,6 +92,13 @@ export const Habilidades = ({ language }) => {
                                             <LoadingBarFigma />
                                         </div>
                                     </li>
+                                    <li className="skillItem">
+                                        <FontAwesomeIcon icon={faRobot} className="figma-icon" />
+                                        <div className="skillText">IA</div>
+                                        <div className="skillLevel">
+                                            <LoadingBarIA />
+                                        </div>
+                                    </li>
 
                                 </ul>
                             </div>
@@ -161,6 +170,13 @@ export const Habilidades = ({ language }) => {
                                         <div className="skillText">Figma</div>
                                         <div className="skillLevel">
                                             <LoadingBarFigma />
+                                        </div>
+                                    </li>
+                                    <li className="skillItem">
+                                        <FontAwesomeIcon icon={faRobot} className="figma-icon" />
+                                        <div className="skillText">AI</div>
+                                        <div className="skillLevel">
+                                            <LoadingBarIA />
                                         </div>
                                     </li>
                                 </ul>

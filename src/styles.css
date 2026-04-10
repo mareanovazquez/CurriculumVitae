@@ -208,7 +208,7 @@ body {
     background-color: var(--color-bg-tertiary);
     padding-top: var(--padding-sm);
     padding-bottom: var(--padding-base);
-    max-height: var(--max-height-sm);
+    height: var(--height-container);
     overflow-y: auto;
     border-radius: var(--border-radius-container);
 }
@@ -309,7 +309,7 @@ body {
 .contenidoFormacion {
     background-color: var(--color-bg-tertiary);
     padding-top: var(--space-1);
-    max-height: var(--max-height-sm);
+    height: var(--height-container);
     overflow-y: auto;
     border-radius: var(--border-radius-sm);
 }
@@ -364,7 +364,7 @@ body {
 
 .contenidoDocencia {
     background-color: var(--color-bg-tertiary);
-    max-height: var(--max-height-sm);
+    height: var(--height-container);
     overflow-y: auto;
     border-radius: var(--border-radius-sm);
     padding-top: var(--space-2);
@@ -423,7 +423,7 @@ body {
 
 .contenidoExperiencia {
     background-color: var(--color-bg-tertiary);
-    max-height: var(--max-height-sm);
+    height: var(--height-container);
     overflow-y: auto;
     border-radius: var(--border-radius-sm);
     padding-top: var(--space-2);
@@ -876,7 +876,7 @@ body {
     }
 
     .contenidoSobreMi {
-        max-height: 350px;
+        height: 350px;
     }
 
     .biografia {
@@ -905,7 +905,10 @@ body {
     }
 
     .contenidoFormacion {
-        max-height: 350px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     /* DOCENCIA */
@@ -914,7 +917,7 @@ body {
     }
 
     .contenidoDocencia {
-        max-height: 350px;
+        height: 350px;
     }
 
     /* EXPERIENCIA */
@@ -924,7 +927,7 @@ body {
     }
 
     .contenidoExperiencia {
-        max-height: 350px;
+        height: 350px;
     }
 
     /* SKILLS */
@@ -934,8 +937,8 @@ body {
     }
 
     .contenedorHabilidades .contenidoSkills {
-        height: auto;
-        max-height: 350px;
+        height: 350px;
+        justify-content: center;
     }
 
     /* PORTFOLIO */
@@ -1147,7 +1150,7 @@ body {
 
     .contenidoSobreMi {
         justify-content: flex-start;
-        max-height: 450px;
+        height: 450px;
     }
 
     .biografia {
@@ -1197,10 +1200,8 @@ body {
     }
 
     .contenidoFormacion {
-        display: flex;
-        flex-direction: column;
+        height: 450px;
         justify-content: center;
-        max-height: 450px;
     }
 
     .formacion {
@@ -1229,7 +1230,7 @@ body {
     }
 
     .contenidoDocencia {
-        max-height: 450px;
+        height: 450px;
     }
 
     .contenidoDocencia .docencia {
@@ -1258,7 +1259,7 @@ body {
     }
 
     .contenidoExperiencia {
-        max-height: 450px;
+        height: 450px;
         padding-left: 20px;
     }
 
@@ -1291,8 +1292,8 @@ body {
     }
 
     .contenedorHabilidades .contenidoSkills {
-        max-height: 400px;
-        justify-content: flex-start;
+        height: 450px;
+        
     }
 
     .contenedorHabilidades .contenidoSkills .listSkills {
@@ -1404,11 +1405,15 @@ body {
 
     .contenidoSobreMi {
         justify-content: flex-start;
-        max-height: 500px;
+        height: 500px;
     }
 
     .contenidoFormacion {
-        max-height: 500px;
+        height: 500px;
+    }
+
+    .contenidoDocencia {
+        height: 500px;
     }
 
     .contenidoPortfolio {
@@ -1416,9 +1421,10 @@ body {
     }
 
     .contenidoExperiencia {
-        max-height: 500px;
+        height: 500px;
     }
+
     .contenidoSkills {
-        max-height: 500px;
+        height: 500px;
     }
 }

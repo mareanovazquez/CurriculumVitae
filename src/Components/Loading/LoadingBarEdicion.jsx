@@ -5,7 +5,7 @@ export const LoadingBarEdicion = () => {
     const [percentageEdicion, setPercentageEdicion] = useState(0);
     useEffect(() => {
         function increasePercentage() {
-            if (percentageEdicion < 82) {
+            if (percentageEdicion < 88) {
                 setPercentageEdicion(prevPercentage => prevPercentage + 1);
             } else {
                 clearInterval(interval);

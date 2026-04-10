@@ -7,7 +7,7 @@ export const LoadingBarLanguage = () => {
 
     useEffect(() => {
         function increasePercentage() {
-            if (percentageLanguage < 55) {
+            if (percentageLanguage < 65) {
                 setPercentageLanguage(prevPercentage => prevPercentage + 1);
             } else {
                 clearInterval(interval);

@@ -7,7 +7,7 @@ export const LoadingBarJavascript = () => {
 
     useEffect(() => {
         function increasePercentage() {
-            if (percentageCss < 68) {
+            if (percentageCss < 78) {
                 setPercentageCss(prevPercentage => prevPercentage + 1);
             } else {
                 clearInterval(interval);

@@ -7,7 +7,7 @@ export const LoadingBarHtml = () => {
 
     useEffect(() => {
         function increasePercentage() {
-            if (percentageHtml < 71) {
+            if (percentageHtml < 89) {
                 setPercentageHtml(prevPercentage => prevPercentage + 1);
             } else {
                 clearInterval(interval);

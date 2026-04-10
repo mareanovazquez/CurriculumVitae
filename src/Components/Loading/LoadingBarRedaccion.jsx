@@ -7,7 +7,7 @@ export const LoadingBarRedaccion = () => {
 
     useEffect(() => {
         function increasePercentage() {
-            if (percentageRedaccion < 88) {
+            if (percentageRedaccion < 94) {
                 setPercentageRedaccion(prevPercentage => prevPercentage + 1);
             } else {
                 clearInterval(interval);
